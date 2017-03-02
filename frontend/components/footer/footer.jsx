@@ -21,36 +21,6 @@ const recentsIcon = <FontIcon className="material-icons">restore</FontIcon>;
 const favoritesIcon = <FontIcon className="material-icons">favorite</FontIcon>;
 const nearbyIcon = <IconLocationOn />;
 
-  const state = {
-    selectedIndex: 0,
-  };
-
-  const select = (index) => this.setState({selectedIndex: index});
-
-  const BottomNav = () => {
-    return (
-      <Paper zDepth={1}>
-        <BottomNavigation selectedIndex={state.selectedIndex}>
-          <BottomNavigationItem
-            label="Recents"
-            icon={recentsIcon}
-            onTouchTap={() => this.select(0)}
-          />
-          <BottomNavigationItem
-            label="Favorites"
-            icon={favoritesIcon}
-            onTouchTap={() => this.select(1)}
-          />
-          <BottomNavigationItem
-            label="Nearby"
-            icon={nearbyIcon}
-            onTouchTap={() => this.select(2)}
-          />
-        </BottomNavigation>
-      </Paper>
-    );
-  }
-
 class Footer extends React.Component{
   constructor(props){
     super(props);
@@ -62,6 +32,36 @@ class Footer extends React.Component{
   }
 
   render(){
+    const state = {
+      selectedIndex: 0,
+    };
+
+    const select = (index) => this.setState({selectedIndex: index});
+
+    const BottomNav = () => {
+      return (
+        <Paper zDepth={1}>
+          <BottomNavigation selectedIndex={state.selectedIndex}>
+            <BottomNavigationItem
+              label="Recents"
+              icon={recentsIcon}
+              onTouchTap={() => this.select(0)}
+            />
+            <BottomNavigationItem
+              label="Favorites"
+              icon={favoritesIcon}
+              onTouchTap={() => this.select(1)}
+            />
+            <BottomNavigationItem
+              label="Nearby"
+              icon={nearbyIcon}
+              onTouchTap={() => this.select(2)}
+            />
+          </BottomNavigation>
+        </Paper>
+      );
+    };
+
     return (
       <footer className="footer">
         <BottomNav />

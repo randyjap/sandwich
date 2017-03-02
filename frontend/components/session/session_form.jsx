@@ -60,7 +60,7 @@ class SessionForm extends React.Component {
   }
 
   openModal() {
-    this.redirect('/')
+    this.redirect('/');
     this.setState({ modalOpen: true });
   }
 
