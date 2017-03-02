@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-router';
 import {Card, CardActions, CardHeader, CardMedia, CardTitle, CardText} from 'material-ui/Card';
 import FlatButton from 'material-ui/FlatButton';
+import Paper from 'material-ui/Paper';
 
 class Splash extends React.Component{
   constructor(props){
@@ -36,7 +37,7 @@ class Splash extends React.Component{
     );
 
     const Article = () => (
-      <div className="article">
+      <Paper zDepth={1} className="article">
         <div>
           <img className="article-image" src="https://media-cdn.tripadvisor.com/media/photo-s/03/c4/95/72/carne-y-vino-restaurant.jpg"/>
         </div>
@@ -45,7 +46,7 @@ class Splash extends React.Component{
           <p>Headline! So new news!</p>
           5 hours ago
         </div>
-      </div>
+      </Paper>
     );
 
     return (
