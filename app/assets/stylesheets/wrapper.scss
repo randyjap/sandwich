@@ -19,6 +19,7 @@
 
 .header {
   background: tomato;
+  min-height: 70px;
 }
 
 .footer {
@@ -26,6 +27,9 @@
 }
 
 .main {
+  padding-left: 50px;
+  padding-right: 50px;
+  min-height: 400px;
   text-align: left;
   background: deepskyblue;
 }
@@ -49,11 +53,12 @@
 }
 
 body {
-  padding: 2em;
 }
 
 /* Large */
 .navigation {
+  position: relative;
+  top: 26px;
   display: flex;
   flex-flow: row wrap;
   /* This aligns items to the end line on main-axis */
@@ -74,4 +79,31 @@ body {
     /* On small screens, we are no longer using row direction but column */
     flex-direction: column;
   }
+}
+
+.nav-links {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.news-card {
+  padding-bottom: 20px;
+}
+
+.article {
+  height: 90px;
+  border-radius: 2px;
+  margin-bottom: 10px;
+  background-color: white;
+  display: flex;
+  flex-flow: row wrap;
+}
+
+img.article-image {
+  height: 90px;
+  width: 150px;
+}
+
+.article-description {
+  padding: 10px;
 }

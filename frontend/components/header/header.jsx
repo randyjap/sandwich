@@ -27,10 +27,10 @@ class Header extends React.Component{
     return (
       <header className="header">
         <ul className="navigation">
-          <li><a href="#">Home</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Products</a></li>
-          <li><a href="#">Contact</a></li>
+          <li><a className="nav-links" href="#">HOME</a></li>
+          <li><a className="nav-links" href="#">ABOUT</a></li>
+          <li><a className="nav-links" href="#">PRODUCTS</a></li>
+          <li><a className="nav-links" href="#">CONTACT</a></li>
         </ul>
       </header>
     );
