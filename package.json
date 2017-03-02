@@ -8,7 +8,8 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "postinstall": "./node_modules/.bin/webpack"
+    "postinstall": "./node_modules/.bin/webpack",
+    "start": "webpack --config mywebpack.config.js"
   },
   "repository": {
     "type": "git",
@@ -42,6 +43,10 @@
     "react-timeago": "^3.2.0",
     "redux": "^3.6.0",
     "redux-thunk": "^2.2.0",
-    "webpack": "^1.14.0"
+    "webpack": "^2.2.1"
+  },
+  "devDependencies": {
+    "babel-preset-es2016": "^6.22.0",
+    "webpack": "^2.1.0-beta.22"
   }
 }
