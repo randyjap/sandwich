@@ -18,32 +18,21 @@
 }
 
 .header {
-  background: tomato;
+  // background: tomato;
   min-height: 70px;
 }
 
 .footer {
-  background: lightgreen;
+  // background: lightgreen;
 }
 
 .main {
-  padding-left: 50px;
-  padding-right: 50px;
+  padding-top: 100px;
+  padding-left: 80px;
+  padding-right: 80px;
   min-height: 400px;
   text-align: left;
-  background: deepskyblue;
-}
-
-.aside-1 {
-  background: gold;
-}
-
-.aside-2 {
-  background: hotpink;
-}
-
-@media all and (min-width: 600px) {
-  .aside { flex: 1 auto; }
+  // background: deepskyblue;
 }
 
 @media all and (min-width: 800px) {
@@ -58,7 +47,8 @@ body {
 /* Large */
 .navigation {
   position: relative;
-  top: 26px;
+  top: 19px;
+  right: 50px;
   display: flex;
   flex-flow: row wrap;
   /* This aligns items to the end line on main-axis */
@@ -106,4 +96,31 @@ img.article-image {
 
 .article-description {
   padding: 10px;
+}
+
+img.logo {
+  position: absolute;
+  left: 10px;
+  top: -5px;
+  height: 100px;
+  width: 120px;
+}
+
+.header {
+  display: flex;
+  flex-flow: row wrap;
+  /* This aligns items to the end line on main-axis */
+  justify-content: flex-end;
+  padding-bottom: 20px;
+  background: white;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 999;
+}
+
+.search-bar {
+  position: relative;
+  right: 100px;
+  bottom: 16px;
 }

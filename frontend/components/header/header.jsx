@@ -12,6 +12,8 @@ import TimeAgo from 'react-timeago';
 import Drawer from 'material-ui/Drawer';
 import MenuItem from 'material-ui/MenuItem';
 import RaisedButton from 'material-ui/RaisedButton';
+import FlatButton from 'material-ui/FlatButton';
+import AutoComplete from 'material-ui/AutoComplete';
 
 class Header extends React.Component{
   constructor(props){
@@ -24,14 +26,53 @@ class Header extends React.Component{
   }
 
   render(){
+    const fruit = [
+      'Apple', 'Apricot', 'Avocado',
+      'Banana', 'Bilberry', 'Blackberry', 'Blackcurrant', 'Blueberry',
+      'Boysenberry', 'Blood Orange',
+      'Cantaloupe', 'Currant', 'Cherry', 'Cherimoya', 'Cloudberry',
+      'Coconut', 'Cranberry', 'Clementine',
+      'Damson', 'Date', 'Dragonfruit', 'Durian',
+      'Elderberry',
+      'Feijoa', 'Fig',
+      'Goji berry', 'Gooseberry', 'Grape', 'Grapefruit', 'Guava',
+      'Honeydew', 'Huckleberry',
+      'Jabouticaba', 'Jackfruit', 'Jambul', 'Jujube', 'Juniper berry',
+      'Kiwi fruit', 'Kumquat',
+      'Lemon', 'Lime', 'Loquat', 'Lychee',
+      'Nectarine',
+      'Mango', 'Marion berry', 'Melon', 'Miracle fruit', 'Mulberry', 'Mandarine',
+      'Olive', 'Orange',
+      'Papaya', 'Passionfruit', 'Peach', 'Pear', 'Persimmon', 'Physalis', 'Plum', 'Pineapple',
+      'Pumpkin', 'Pomegranate', 'Pomelo', 'Purple Mangosteen',
+      'Quince',
+      'Raspberry', 'Raisin', 'Rambutan', 'Redcurrant',
+      'Salal berry', 'Satsuma', 'Star fruit', 'Strawberry', 'Squash', 'Salmonberry',
+      'Tamarillo', 'Tamarind', 'Tomato', 'Tangerine',
+      'Ugli fruit',
+      'Watermelon',
+    ];
+
+    const FlatButtonExampleSimple = () => (
+      <div className="navigation">
+        <FlatButton label="Default" />
+        <FlatButton label="Primary" primary={true} />
+        <FlatButton label="Secondary" secondary={true} />
+        <FlatButton label="Disabled" disabled={true} />
+      </div>
+    );
+
     return (
       <header className="header">
-        <ul className="navigation">
-          <li><a className="nav-links" href="#">HOME</a></li>
-          <li><a className="nav-links" href="#">ABOUT</a></li>
-          <li><a className="nav-links" href="#">PRODUCTS</a></li>
-          <li><a className="nav-links" href="#">CONTACT</a></li>
-        </ul>
+          <img className="logo" src="http://diylogodesigns.com/blog/wp-content/uploads/2016/01/Flamin-Burger-logo-99designs.png" />
+            <AutoComplete
+              floatingLabelText="Search..."
+              filter={AutoComplete.fuzzyFilter}
+              dataSource={fruit}
+              maxSearchResults={5}
+              className="search-bar"
+            />
+          <FlatButtonExampleSimple />
       </header>
     );
   }

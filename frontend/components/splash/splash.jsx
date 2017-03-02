@@ -38,11 +38,11 @@ class Splash extends React.Component{
     const Article = () => (
       <div className="article">
         <div>
-          <img className="article-image" src="https://cdn.pixabay.com/user/2014/05/07/00-10-34-2_250x250.jpg"/>
+          <img className="article-image" src="https://media-cdn.tripadvisor.com/media/photo-s/03/c4/95/72/carne-y-vino-restaurant.jpg"/>
         </div>
         <div className="article-description">
-          <h3>NEWS</h3>
-          <h1>Headline! So new news!</h1>
+          <p>NEWS</p>
+          <p>Headline! So new news!</p>
           5 hours ago
         </div>
       </div>
