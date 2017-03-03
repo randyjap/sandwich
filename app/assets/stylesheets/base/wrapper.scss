@@ -124,3 +124,16 @@ img.logo {
   right: 100px;
   bottom: 16px;
 }
+
+.article-body-content>p:nth-of-type(1):not(.standout):first-letter {
+  font-style: normal;
+  font-weight: 400;
+  text-transform: uppercase;
+  word-spacing: -.5rem;
+  color: #0f1568;
+  float: left;
+  font-size: 10rem;
+  line-height: .5;
+  margin: 1.8rem 0 0;
+  padding-right: .5rem;
+}
