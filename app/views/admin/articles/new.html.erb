@@ -1,0 +1,24 @@
+<form class="" action="<%= admin_articles_url %>" method="post">
+  <input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>">
+  <table>
+    <tr>
+      <td>Title</td>
+      <td><input type="text" name="article[title]" value=""></td>
+    </tr>
+    <tr>
+      <td>Image_url:</td>
+      <td><input type="text" name="article[image_url]" value=""></td>
+    </tr>
+    <tr>
+      <td>Thumbnail_url:</td>
+      <td><input type="text" name="article[thumbnail_url]" value=""></td>
+    </tr>
+    <tr>
+      <td>Article:</td>
+      <td><textarea name="article[article]" value="" rows="20" cols="200"></textarea></td>
+    </tr>
+    <tr>
+      <td><input type="submit" name="" value="Submit"></td>
+    </tr>
+  </table>
+</form>
