@@ -10,7 +10,6 @@ class Restaurant extends React.Component{
   render(){
     return (
       <div className="restaurant">
-        <h1 className=""></h1>
         <MapContainer />
       </div>
     );
