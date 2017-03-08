@@ -4,6 +4,7 @@ import { Router, Route, IndexRoute, hashHistory } from 'react-router';
 import App from './app';
 import SessionFormContainer from './session/session_form_container';
 import SplashContainer from './splash/splash_container';
+import RestaurantContainer from './restaurant/restaurant_container';
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 // Needed for onTouchTap
 import injectTapEventPlugin from 'react-tap-event-plugin';
@@ -32,6 +33,7 @@ const Root = ({ store }) => {
             <IndexRoute component={ SplashContainer } />
             <Route path="login" component={ SessionFormContainer } onEnter={ _redirectIfLoggedIn } />
             <Route path="signup" component={ SessionFormContainer } onEnter={ _redirectIfLoggedIn } />
+            <Route path="restaurants" component={ RestaurantContainer } />
           </Route>
         </Router>
       </MuiThemeProvider>

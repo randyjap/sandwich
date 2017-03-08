@@ -1,10 +1,16 @@
 .header {
   // background: tomato;
   min-height: 70px;
-}
-
-.footer {
-  // background: lightgreen;
+  display: flex;
+  flex-flow: row wrap;
+  /* This aligns items to the end line on main-axis */
+  justify-content: flex-end;
+  padding-bottom: 20px;
+  background: white;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 999;
 }
 
 .main {
@@ -74,19 +80,6 @@ img.logo {
   width: 120px;
 }
 
-.header {
-  display: flex;
-  flex-flow: row wrap;
-  /* This aligns items to the end line on main-axis */
-  justify-content: flex-end;
-  padding-bottom: 20px;
-  background: white;
-  width: 100%;
-  position: fixed;
-  top: 0;
-  z-index: 999;
-}
-
 .search-bar {
   position: relative;
   right: 100px;
@@ -143,4 +136,10 @@ img.logo {
 
 .article-tile {
   width: 50%;
+}
+
+.footer {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
 }
