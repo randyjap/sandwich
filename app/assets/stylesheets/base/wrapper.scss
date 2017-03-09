@@ -77,6 +77,7 @@ img {
 }
 
 .main-two-column {
+  max-width: 100%;
   margin-left: 20px;
   display: flex;
   flex-direction: row;
@@ -84,7 +85,11 @@ img {
 
 .two-column-article {
   max-width: 419px;
-  margin: 25px
+  margin: 25px;
+}
+
+.article-text {
+  max-width: 100%;
 }
 
 .main-body {
