@@ -12,12 +12,8 @@ class Restaurant extends React.Component{
       <div className="main">
         <div className="main-header">
           <ul className="main-header-nav">
-            <li><a href="#">Restaurants</a></li>
-            <li><a href="#">Guides</a></li>
-            <li><a href="#">Style</a></li>
-            <li><a href="#">Galleries</a></li>
-            <li><a href="#">Lifestyle</a></li>
-            <li><a href="#">Videos</a></li>
+            <li><a href="#">Taipei</a></li>
+            <li><a href="#">Downtown Los Angeles</a></li>
           </ul>
         </div>
         <div className="main-body">
