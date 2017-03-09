@@ -59,8 +59,8 @@ let _mapOptions = {
 };
 
 let restaurantDummies = [
-  { id: 15, name: "Happy Restaurant", lat: 25.044866, lng: 121.5442743 },
-  { id: 16, name: "Good Luck Restaurant", lat: 25.041146, lng: 121.5421783 }
+  { id: 1, name: "Happy Restaurant", lat: 25.044866, lng: 121.5442743 },
+  { id: 2, name: "Good Luck Restaurant", lat: 25.041146, lng: 121.5421783 }
 ];
 
 class Map extends Component {
