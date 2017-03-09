@@ -1,15 +1,18 @@
 import React from 'react';
 import { Link } from 'react-router';
-import {Card, CardActions, CardHeader, CardMedia, CardTitle, CardText} from 'material-ui/Card';
-import FlatButton from 'material-ui/FlatButton';
-import Paper from 'material-ui/Paper';
 import Slider from 'react-slick';
 import {getArticles} from './../../util/article_api_util';
+import RawHtml from "react-raw-html";
 
 class Splash extends React.Component{
   constructor(props){
     super(props);
+    this.redirect = this.redirect.bind(this);
     this.state = { articles: {} };
+  }
+
+  redirect(route){
+    this.props.router.replace(route);
   }
 
   componentDidMount(){
@@ -27,14 +30,14 @@ class Splash extends React.Component{
       arrows: true
     };
 
-    const SliderComponent = (
+    const SliderComponent = (key) => (
       <Slider {...settings}>
-        <div><img src="http://res.cloudinary.com/dkympkwdz/image/upload/v1489010716/example_pqoqsl.jpg"/></div>
-        <div><img src="http://res.cloudinary.com/dkympkwdz/image/upload/v1489010716/example_pqoqsl.jpg"/></div>
-        <div><img src="http://res.cloudinary.com/dkympkwdz/image/upload/v1489010716/example_pqoqsl.jpg"/></div>
-        <div><img src="http://res.cloudinary.com/dkympkwdz/image/upload/v1489010716/example_pqoqsl.jpg"/></div>
-        <div><img src="http://res.cloudinary.com/dkympkwdz/image/upload/v1489010716/example_pqoqsl.jpg"/></div>
-        <div><img src="http://res.cloudinary.com/dkympkwdz/image/upload/v1489010716/example_pqoqsl.jpg"/></div>
+        <div><img onClick={() => this.redirect(`restaurants/${key}`)} src="http://res.cloudinary.com/dkympkwdz/image/upload/v1489010716/example_pqoqsl.jpg"/></div>
+        <div><img onClick={() => this.redirect(`restaurants/${key}`)} src="http://res.cloudinary.com/dkympkwdz/image/upload/v1489010716/example_pqoqsl.jpg"/></div>
+        <div><img onClick={() => this.redirect(`restaurants/${key}`)} src="http://res.cloudinary.com/dkympkwdz/image/upload/v1489010716/example_pqoqsl.jpg"/></div>
+        <div><img onClick={() => this.redirect(`restaurants/${key}`)} src="http://res.cloudinary.com/dkympkwdz/image/upload/v1489010716/example_pqoqsl.jpg"/></div>
+        <div><img onClick={() => this.redirect(`restaurants/${key}`)} src="http://res.cloudinary.com/dkympkwdz/image/upload/v1489010716/example_pqoqsl.jpg"/></div>
+        <div><img onClick={() => this.redirect(`restaurants/${key}`)} src="http://res.cloudinary.com/dkympkwdz/image/upload/v1489010716/example_pqoqsl.jpg"/></div>
       </Slider>
     );
 
@@ -43,15 +46,16 @@ class Splash extends React.Component{
     let keys = Object.keys(this.state.articles);
     if (keys.length > 0) {
       mainArticle = keys.slice(0,1).map(key => {
+        RawHtml.addTag("mycooltag");
         return (
-          <div className="article main-article">
-            {SliderComponent}
+          <div key={key} className="article main-article">
+            {SliderComponent(key)}
             <div className="main-carousel-bottom">
               <div className="article-text">
                 <p className="article-title">{this.state.articles[key].title}</p>
-                <p className="article-body">
-                  {this.state.articles[key].article}
-                </p>
+                <div className="article-body">
+                  <RawHtml.mycooltag>{this.state.articles[key].article}</RawHtml.mycooltag>
+                </div>
               </div>
               <img src="http://res.cloudinary.com/dkympkwdz/image/upload/v1488928247/example_pkzok0.png" />
             </div>
@@ -62,15 +66,16 @@ class Splash extends React.Component{
 
     if (keys.length > 1) {
       subArticles = keys.slice(1).map(key => {
+        RawHtml.addTag("mycooltag");
         return (
-          <div className="article two-column-article">
-            {SliderComponent}
+          <div key={key} className="article two-column-article">
+            {SliderComponent(key)}
             <div className="main-carousel-bottom">
               <div className="article-text">
                 <p className="article-title">{this.state.articles[key].title}</p>
-                <p className="article-body">
-                  {this.state.articles[key].article}
-                </p>
+                <div className="article-body">
+                  <RawHtml.mycooltag>{this.state.articles[key].article}</RawHtml.mycooltag>
+                </div>
               </div>
             </div>
           </div>
@@ -82,12 +87,8 @@ class Splash extends React.Component{
       <div className="main">
         <div className="main-header">
           <ul className="main-header-nav">
-            <li><a href="#">Restaurants</a></li>
-            <li><a href="#">Guides</a></li>
-            <li><a href="#">Style</a></li>
-            <li><a href="#">Galleries</a></li>
-            <li><a href="#">Lifestyle</a></li>
-            <li><a href="#">Videos</a></li>
+            <li><a href="#">Taipei</a></li>
+            <li><a href="#">Downtown Los Angeles</a></li>
           </ul>
         </div>
         <div className="main-body">

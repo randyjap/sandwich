@@ -33,7 +33,7 @@ const Root = ({ store }) => {
             <IndexRoute component={ SplashContainer } />
             <Route path="login" component={ SessionFormContainer } onEnter={ _redirectIfLoggedIn } />
             <Route path="signup" component={ SessionFormContainer } onEnter={ _redirectIfLoggedIn } />
-            <Route path="restaurants" component={ RestaurantContainer } />
+            <Route path="restaurants/:id" component={ RestaurantContainer } />
           </Route>
         </Router>
       </MuiThemeProvider>

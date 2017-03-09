@@ -59,11 +59,8 @@ let _mapOptions = {
 };
 
 let restaurantDummies = [
-  { id: 1, name: "Happy Restaurant", lat: 25.044866, lng: 121.5442743 },
-  { id: 2, name: "Good Luck Restaurant", lat: 25.041146, lng: 121.5421783 },
-  { id: 3, name: "Best Restaurant", lat: 25.049526, lng: 121.5416753 },
-  { id: 4, name: "Golden Restaurant", lat: 25.046316, lng: 121.5494793 },
-  { id: 5, name: "Great Restaurant", lat: 25.043696, lng: 121.5479713 }
+  { id: 15, name: "Happy Restaurant", lat: 25.044866, lng: 121.5442743 },
+  { id: 16, name: "Good Luck Restaurant", lat: 25.041146, lng: 121.5421783 }
 ];
 
 class Map extends Component {
@@ -77,6 +74,7 @@ class Map extends Component {
     this.MarkerManager = new MarkerManager(this.map, this._handleMarkerClick.bind(this));
     this._registerListeners();
     this.MarkerManager.updateMarkers(restaurantDummies);
+    this.redirect = this.redirect.bind(this);
   }
 
   componentDidUpdate(){
@@ -102,8 +100,9 @@ class Map extends Component {
   }
 
   _handleMarkerClick(restaurant){
-    // this.props.router.replace(`restaurants/${restaurant.id}`);
-    $( "div#change-me" ).replaceWith( `<div id="change-me">${restaurant.name}</div>` );
+    // this.props.router.push(`restaurants/${restaurant.id}`);
+    this.redirect(`restaurants/${restaurant.id}`);
+    // $( "div#change-me" ).replaceWith( `<div id="change-me">${restaurant.name}</div>` );
   }
 
   _handleClick(coords){
@@ -114,12 +113,14 @@ class Map extends Component {
     console.log(coords);
   }
 
+  redirect(route){
+    this.props.router.replace(route);
+  }
+
   render(){
     return (
       <div className="map-container">
         <div className="map" id="map-container" ref="map">Map</div>
-        <div id="change-me">HELLO! Click the markers above!</div>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
       </div>
     );
   }

@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router';
 
 class Header extends React.Component{
   constructor(props){
@@ -13,7 +14,7 @@ class Header extends React.Component{
   render(){
     return (
       <header className="header">
-        <div className="header-title">
+        <div onClick={() => this.redirect('')} className="header-title">
           Sandwich
         </div>
       </header>

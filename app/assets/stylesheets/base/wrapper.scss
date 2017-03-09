@@ -5,6 +5,7 @@
 }
 
 .header-title {
+  cursor: pointer;
   position: relative;
   top: 52px;
   font-size: 120px;
@@ -26,6 +27,7 @@
 
 img {
   max-width: 100%;
+  cursor: pointer;
   height: auto;
 }
 
@@ -114,4 +116,15 @@ img {
   height: 50px;
   width: 100%;
   border-top: 3px solid black;
+}
+
+.article-title {
+  font-size: 20px;
+  weight: 200;
+  padding-bottom: 20px;
+}
+
+.article-body > mycooltag > p {
+  padding-bottom: 10px;
+  font-size: 14px;
 }
