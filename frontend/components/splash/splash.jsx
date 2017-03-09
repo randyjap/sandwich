@@ -4,10 +4,17 @@ import {Card, CardActions, CardHeader, CardMedia, CardTitle, CardText} from 'mat
 import FlatButton from 'material-ui/FlatButton';
 import Paper from 'material-ui/Paper';
 import Slider from 'react-slick';
+import {getArticles} from './../../util/article_api_util';
 
 class Splash extends React.Component{
   constructor(props){
     super(props);
+    this.state = { articles: {} };
+  }
+
+  componentDidMount(){
+    let that = this;
+    getArticles().then(data => that.setState({articles: data}));
   }
 
   render(){
@@ -21,15 +28,55 @@ class Splash extends React.Component{
     };
 
     const SliderComponent = (
-        <Slider {...settings}>
-          <div><img src="http://res.cloudinary.com/dkympkwdz/image/upload/v1489010716/example_pqoqsl.jpg"/></div>
-          <div><img src="http://res.cloudinary.com/dkympkwdz/image/upload/v1489010716/example_pqoqsl.jpg"/></div>
-          <div><img src="http://res.cloudinary.com/dkympkwdz/image/upload/v1489010716/example_pqoqsl.jpg"/></div>
-          <div><img src="http://res.cloudinary.com/dkympkwdz/image/upload/v1489010716/example_pqoqsl.jpg"/></div>
-          <div><img src="http://res.cloudinary.com/dkympkwdz/image/upload/v1489010716/example_pqoqsl.jpg"/></div>
-          <div><img src="http://res.cloudinary.com/dkympkwdz/image/upload/v1489010716/example_pqoqsl.jpg"/></div>
-        </Slider>
-      );
+      <Slider {...settings}>
+        <div><img src="http://res.cloudinary.com/dkympkwdz/image/upload/v1489010716/example_pqoqsl.jpg"/></div>
+        <div><img src="http://res.cloudinary.com/dkympkwdz/image/upload/v1489010716/example_pqoqsl.jpg"/></div>
+        <div><img src="http://res.cloudinary.com/dkympkwdz/image/upload/v1489010716/example_pqoqsl.jpg"/></div>
+        <div><img src="http://res.cloudinary.com/dkympkwdz/image/upload/v1489010716/example_pqoqsl.jpg"/></div>
+        <div><img src="http://res.cloudinary.com/dkympkwdz/image/upload/v1489010716/example_pqoqsl.jpg"/></div>
+        <div><img src="http://res.cloudinary.com/dkympkwdz/image/upload/v1489010716/example_pqoqsl.jpg"/></div>
+      </Slider>
+    );
+
+    let mainArticle;
+    let subArticles;
+    let keys = Object.keys(this.state.articles);
+    if (keys.length > 0) {
+      mainArticle = keys.slice(0,1).map(key => {
+        return (
+          <div className="article main-article">
+            {SliderComponent}
+            <div className="main-carousel-bottom">
+              <div className="article-text">
+                <p className="article-title">{this.state.articles[key].title}</p>
+                <p className="article-body">
+                  {this.state.articles[key].article}
+                </p>
+              </div>
+              <img src="http://res.cloudinary.com/dkympkwdz/image/upload/v1488928247/example_pkzok0.png" />
+            </div>
+          </div>
+        );
+      });
+    }
+
+    if (keys.length > 1) {
+      subArticles = keys.slice(1).map(key => {
+        return (
+          <div className="article two-column-article">
+            {SliderComponent}
+            <div className="main-carousel-bottom">
+              <div className="article-text">
+                <p className="article-title">{this.state.articles[key].title}</p>
+                <p className="article-body">
+                  {this.state.articles[key].article}
+                </p>
+              </div>
+            </div>
+          </div>
+        );
+      });
+    }
 
     return (
       <div className="main">
@@ -44,71 +91,8 @@ class Splash extends React.Component{
           </ul>
         </div>
         <div className="main-body">
-          <div className="article main-article">
-            {SliderComponent}
-            <div className="main-carousel-bottom">
-              <div className="article-text">
-                <p className="article-title">Si Chuan Restaurant</p>
-                <p className="article-body">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                  tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                  quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                  consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                  cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
-                  non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                </p>
-              </div>
-              <img src="http://res.cloudinary.com/dkympkwdz/image/upload/v1488928247/example_pkzok0.png" />
-            </div>
-          </div>
-          <div className="article two-column-article">
-            {SliderComponent}
-            <div className="main-carousel-bottom">
-              <div className="article-text">
-                <p className="article-title">Si Chuan Restaurant</p>
-                <p className="article-body">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                  tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                  quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                  consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                  cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
-                  non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div className="article two-column-article">
-            {SliderComponent}
-            <div className="main-carousel-bottom">
-              <div className="article-text">
-                <p className="article-title">Si Chuan Restaurant</p>
-                <p className="article-body">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                  tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                  quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                  consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                  cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
-                  non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div className="article two-column-article">
-            {SliderComponent}
-            <div className="main-carousel-bottom">
-              <div className="article-text">
-                <p className="article-title">Si Chuan Restaurant</p>
-                <p className="article-body">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                  tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                  quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                  consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                  cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
-                  non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                </p>
-              </div>
-            </div>
-          </div>
+          {mainArticle}
+          {subArticles}
         </div>
         <footer className="footer">
 
