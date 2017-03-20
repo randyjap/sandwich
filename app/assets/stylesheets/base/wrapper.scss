@@ -36,6 +36,7 @@ img {
 }
 
 .main-header-nav {
+  width: 100%;
   display: flex;
   justify-content: center;
   padding: 10px;
@@ -43,6 +44,12 @@ img {
   margin-top: 20px;
   border-bottom: 3px solid black;
   margin-bottom: 2px;
+}
+
+@media screen and (max-width: 430px) {
+    .main-header-nav {
+        flex-direction: column;
+    }
 }
 
 .main-header-nav > li {
@@ -65,7 +72,6 @@ img {
 
 .article {
   position: relative;
-  left: 10px;
   margin: 20px;
   padding: 0px;
   box-shadow: 10px 10px 5px #888888;
@@ -79,11 +85,12 @@ img {
 
 .article-text {
   padding: 20px;
+  height: 210px;
+  overflow-y: scroll;
 }
 
 .main-two-column {
   max-width: 100%;
-  margin-left: 20px;
   display: flex;
   flex-direction: row;
 }
@@ -93,6 +100,7 @@ img {
 }
 
 .two-column-article {
+  height: 570px;
   max-width: 419px;
   margin: 25px;
 }
@@ -106,9 +114,22 @@ img {
   border-top: 1px solid black;
   border-bottom: 1px solid black;
   padding-bottom: 20px;
+  -webkit-display: -webkit-box;
+  -webkit-display: -webkit-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-justify-content: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   flex-wrap: wrap;
+  min-height: 100vh;
+  flex-direction: row;
 }
 
 .footer {
