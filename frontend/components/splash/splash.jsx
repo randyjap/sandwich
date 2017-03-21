@@ -30,6 +30,9 @@ class Splash extends React.Component{
   componentDidMount(){
     let that = this;
     getArticles().then(data => that.setState({articles: data}));
+
+    slider_1();
+    slider_2();
   }
 
   render(){
@@ -121,7 +124,7 @@ class Splash extends React.Component{
 
     				<section className="middle">
     					<div className="inner">
-    						<div id="logo_top"><a href="index.html"><img src="images/logo_top.png" alt="Enterprise" title="Enterprise"/></a></div>
+    						<div id="logo_top"><a href="index.html"><img src="http://www.randyjap.com/sandwich_assets/images/logo_top.png" alt="Enterprise" title="Enterprise"/></a></div>
     					</div>
     				</section>
 
@@ -144,7 +147,7 @@ class Splash extends React.Component{
     							<div className="dropdown" data-menu="photography">
     								<div className="image_type_1">
     									<div className="image">
-    										<a href="#"><img src="images/pic_drop_1_1.jpg" alt=""/><span className="hover"></span></a>
+    										<a href="#"><img src="http://www.randyjap.com/sandwich_assets/images/pic_drop_1_1.jpg" alt=""/><span className="hover"></span></a>
     									</div>
 
     									<div className="title"><a href="#">Sed ut perspiciatis unde omnis iste.</a></div>
@@ -152,7 +155,7 @@ class Splash extends React.Component{
 
     								<div className="image_type_1">
     									<div className="image">
-    										<a href="#"><img src="images/pic_drop_1_2.jpg" alt=""/><span className="hover"></span></a>
+    										<a href="#"><img src="http://www.randyjap.com/sandwich_assets/images/pic_drop_1_2.jpg" alt=""/><span className="hover"></span></a>
     									</div>
 
     									<div className="title"><a href="#">Unde omnis iste natus sit volup.</a></div>
@@ -200,21 +203,21 @@ class Splash extends React.Component{
     						<ul className="slides">
     							<li>
     								<div className="caption type_1">
-    									<img src="images/pic_slider_2_1_1.jpg" alt=""/>
+    									<img src="http://www.randyjap.com/sandwich_assets/images/pic_slider_2_1_1.jpg" alt=""/>
     									<div className="text_1_1">Travel, PHOTOGRAPHY</div>
     									<div className="text_1_2">Mountains in Switzerland</div>
     									<div className="text_1_3"><a href="#" className="general_button_type_1">Read More</a></div>
     								</div>
 
     								<div className="caption type_2">
-    									<img src="images/pic_slider_2_1_2.jpg" alt=""/>
+    									<img src="http://www.randyjap.com/sandwich_assets/images/pic_slider_2_1_2.jpg" alt=""/>
     									<div className="text_2_1">Travel, PHOTOGRAPHY</div>
     									<div className="text_2_2">My love - new york</div>
     									<div className="text_2_3"><a href="#" className="general_button_type_2">Read More</a></div>
     								</div>
 
     								<div className="caption type_3">
-    									<img src="images/pic_slider_2_1_3.jpg" alt=""/>
+    									<img src="http://www.randyjap.com/sandwich_assets/images/pic_slider_2_1_3.jpg" alt=""/>
     									<div className="text_3_1">Life, PHOTOGRAPHY</div>
     									<div className="text_3_2">My Awesome workplace</div>
     									<div className="text_3_3"><a href="#" className="general_button_type_2">Read More</a></div>
@@ -223,21 +226,21 @@ class Splash extends React.Component{
 
     							<li>
     								<div className="caption type_1">
-    									<img src="images/pic_slider_2_2_1.jpg" alt=""/>
+    									<img src="http://www.randyjap.com/sandwich_assets/images/pic_slider_2_2_1.jpg" alt=""/>
     									<div className="text_1_1">Life, PHOTOGRAPHY</div>
     									<div className="text_1_2">Flying over the mountains</div>
     									<div className="text_1_3"><a href="#" className="general_button_type_1">Read More</a></div>
     								</div>
 
     								<div className="caption type_2">
-    									<img src="images/pic_slider_2_2_2.jpg" alt=""/>
+    									<img src="http://www.randyjap.com/sandwich_assets/images/pic_slider_2_2_2.jpg" alt=""/>
     									<div className="text_2_1">Travel, PHOTOGRAPHY</div>
     									<div className="text_2_2">Young Businessman</div>
     									<div className="text_2_3"><a href="#" className="general_button_type_2">Read More</a></div>
     								</div>
 
     								<div className="caption type_3">
-    									<img src="images/pic_slider_2_2_3.jpg" alt=""/>
+    									<img src="http://www.randyjap.com/sandwich_assets/images/pic_slider_2_2_3.jpg" alt=""/>
     									<div className="text_3_1">People, Life</div>
     									<div className="text_3_2">The Guy on the field</div>
     									<div className="text_3_3"><a href="#" className="general_button_type_2">Read More</a></div>
@@ -245,7 +248,7 @@ class Splash extends React.Component{
     							</li>
     						</ul>
     					</div>
-              {slider_2}
+
     				</div>
 
     				<div className="block_general_title_1 w_margin_1">
@@ -257,7 +260,7 @@ class Splash extends React.Component{
     					<article className="post_type_4">
     						<div className="feature">
     							<div className="image">
-    								<a href="blog_post.html"><img src="images/pic_f_post_1_1.jpg" alt=""/><span className="hover"></span></a>
+    								<a href="blog_post.html"><img src="http://www.randyjap.com/sandwich_assets/images/pic_f_post_1_1.jpg" alt=""/><span className="hover"></span></a>
     							</div>
     						</div>
 
@@ -280,7 +283,7 @@ class Splash extends React.Component{
     					<article className="post_type_4">
     						<div className="feature">
     							<div className="image">
-    								<a href="blog_post.html"><img src="images/pic_f_post_1_2.jpg" alt=""/><span className="hover"></span></a>
+    								<a href="blog_post.html"><img src="http://www.randyjap.com/sandwich_assets/images/pic_f_post_1_2.jpg" alt=""/><span className="hover"></span></a>
     							</div>
     						</div>
 
@@ -303,7 +306,7 @@ class Splash extends React.Component{
     					<article className="post_type_4">
     						<div className="feature">
     							<div className="image">
-    								<a href="blog_post.html"><img src="images/pic_f_post_1_3.jpg" alt=""/><span className="hover"></span></a>
+    								<a href="blog_post.html"><img src="http://www.randyjap.com/sandwich_assets/images/pic_f_post_1_3.jpg" alt=""/><span className="hover"></span></a>
     							</div>
     						</div>
 
@@ -337,7 +340,7 @@ class Splash extends React.Component{
     						<article className="post_type_4">
     							<div className="feature">
     								<div className="image">
-    									<a href="blog_post.html"><img src="images/pic_post_2_1.jpg" alt=""/><span className="hover"></span></a>
+    									<a href="blog_post.html"><img src="http://www.randyjap.com/sandwich_assets/images/pic_post_2_1.jpg" alt=""/><span className="hover"></span></a>
     								</div>
     							</div>
 
@@ -362,7 +365,7 @@ class Splash extends React.Component{
     						<article className="post_type_4">
     							<div className="feature">
     								<div className="image">
-    									<a href="blog_post.html"><img src="images/pic_post_2_2.jpg" alt=""/><span className="hover"></span></a>
+    									<a href="blog_post.html"><img src="http://www.randyjap.com/sandwich_assets/images/pic_post_2_2.jpg" alt=""/><span className="hover"></span></a>
     								</div>
     							</div>
 
@@ -387,7 +390,7 @@ class Splash extends React.Component{
     						<article className="post_type_4">
     							<div className="feature">
     								<div className="image">
-    									<a href="blog_post.html"><img src="images/pic_post_2_3.jpg" alt=""/><span className="hover"></span></a>
+    									<a href="blog_post.html"><img src="http://www.randyjap.com/sandwich_assets/images/pic_post_2_3.jpg" alt=""/><span className="hover"></span></a>
     								</div>
     							</div>
 
@@ -412,7 +415,7 @@ class Splash extends React.Component{
     						<article className="post_type_4">
     							<div className="feature">
     								<div className="image">
-    									<a href="blog_post.html"><img src="images/pic_post_2_4.jpg" alt=""/><span className="hover"></span></a>
+    									<a href="blog_post.html"><img src="http://www.randyjap.com/sandwich_assets/images/pic_post_2_4.jpg" alt=""/><span className="hover"></span></a>
     								</div>
     							</div>
 
@@ -439,13 +442,13 @@ class Splash extends React.Component{
     								<div className="slider">
     									<div id="post_slider_1" className="flexslider">
     										<ul className="slides">
-    											<li><img src="images/pic_post_2_5.jpg" alt=""/></li>
-    											<li><img src="images/pic_post_2_9.jpg" alt=""/></li>
-    											<li><img src="images/pic_post_2_10.jpg" alt=""/></li>
+    											<li><img src="http://www.randyjap.com/sandwich_assets/images/pic_post_2_5.jpg" alt=""/></li>
+    											<li><img src="http://www.randyjap.com/sandwich_assets/images/pic_post_2_9.jpg" alt=""/></li>
+    											<li><img src="http://www.randyjap.com/sandwich_assets/images/pic_post_2_10.jpg" alt=""/></li>
     										</ul>
     									</div>
 
-                      {slider_1}
+
     								</div>
     							</div>
 
@@ -470,7 +473,7 @@ class Splash extends React.Component{
     						<article className="post_type_4">
     							<div className="feature">
     								<div className="image">
-    									<a href="blog_post_video.html"><img src="images/pic_post_2_6.jpg" alt=""/><span className="hover no_icon"></span><span className="icon video"></span></a>
+    									<a href="blog_post_video.html"><img src="http://www.randyjap.com/sandwich_assets/images/pic_post_2_6.jpg" alt=""/><span className="hover no_icon"></span><span className="icon video"></span></a>
     								</div>
     							</div>
 
@@ -495,7 +498,7 @@ class Splash extends React.Component{
     						<article className="post_type_4">
     							<div className="feature">
     								<div className="image">
-    									<a href="blog_post_review.html"><img src="images/pic_post_2_7.jpg" alt=""/><span className="hover"></span></a>
+    									<a href="blog_post_review.html"><img src="http://www.randyjap.com/sandwich_assets/images/pic_post_2_7.jpg" alt=""/><span className="hover"></span></a>
     								</div>
 
     								<div className="review">
@@ -525,7 +528,7 @@ class Splash extends React.Component{
     						<article className="post_type_4">
     							<div className="feature">
     								<div className="image">
-    									<a href="blog_post.html"><img src="images/pic_post_2_8.jpg" alt=""/><span className="hover"></span></a>
+    									<a href="blog_post.html"><img src="http://www.randyjap.com/sandwich_assets/images/pic_post_2_8.jpg" alt=""/><span className="hover"></span></a>
     								</div>
     							</div>
 
@@ -593,7 +596,7 @@ class Splash extends React.Component{
     					</aside>
 
     					<aside>
-    						<div className="block_banner_1"><a href="#"><img src="images/banner_1.jpg" alt=""/></a></div>
+    						<div className="block_banner_1"><a href="#"><img src="http://www.randyjap.com/sandwich_assets/images/banner_1.jpg" alt=""/></a></div>
     					</aside>
 
     					<aside>
@@ -601,7 +604,7 @@ class Splash extends React.Component{
 
     						<div className="block_sidebar_popular_posts">
     							<article>
-    								<div className="image"><a href="#"><img src="images/pic_popular_post_1_1.jpg" alt=""/></a></div>
+    								<div className="image"><a href="#"><img src="http://www.randyjap.com/sandwich_assets/images/pic_popular_post_1_1.jpg" alt=""/></a></div>
 
     								<div className="content">
     									<div className="title">
@@ -616,7 +619,7 @@ class Splash extends React.Component{
     							</article>
 
     							<article>
-    								<div className="image"><a href="#"><img src="images/pic_popular_post_1_2.jpg" alt=""/></a></div>
+    								<div className="image"><a href="#"><img src="http://www.randyjap.com/sandwich_assets/images/pic_popular_post_1_2.jpg" alt=""/></a></div>
 
     								<div className="content">
     									<div className="title">
@@ -631,7 +634,7 @@ class Splash extends React.Component{
     							</article>
 
     							<article>
-    								<div className="image"><a href="#"><img src="images/pic_popular_post_1_3.jpg" alt=""/></a></div>
+    								<div className="image"><a href="#"><img src="http://www.randyjap.com/sandwich_assets/images/pic_popular_post_1_3.jpg" alt=""/></a></div>
 
     								<div className="content">
     									<div className="title">
@@ -757,12 +760,12 @@ class Splash extends React.Component{
     									<h3>Instagram</h3>
 
     									<ul>
-    										<li><a href="#"><img src="images/pic_footer_1.jpg" alt=""/><span className="hover"></span></a></li>
-    										<li><a href="#"><img src="images/pic_footer_2.jpg" alt=""/><span className="hover"></span></a></li>
-    										<li><a href="#"><img src="images/pic_footer_3.jpg" alt=""/><span className="hover"></span></a></li>
-    										<li><a href="#"><img src="images/pic_footer_4.jpg" alt=""/><span className="hover"></span></a></li>
-    										<li><a href="#"><img src="images/pic_footer_5.jpg" alt=""/><span className="hover"></span></a></li>
-    										<li><a href="#"><img src="images/pic_footer_6.jpg" alt=""/><span className="hover"></span></a></li>
+    										<li><a href="#"><img src="http://www.randyjap.com/sandwich_assets/images/pic_footer_1.jpg" alt=""/><span className="hover"></span></a></li>
+    										<li><a href="#"><img src="http://www.randyjap.com/sandwich_assets/images/pic_footer_2.jpg" alt=""/><span className="hover"></span></a></li>
+    										<li><a href="#"><img src="http://www.randyjap.com/sandwich_assets/images/pic_footer_3.jpg" alt=""/><span className="hover"></span></a></li>
+    										<li><a href="#"><img src="http://www.randyjap.com/sandwich_assets/images/pic_footer_4.jpg" alt=""/><span className="hover"></span></a></li>
+    										<li><a href="#"><img src="http://www.randyjap.com/sandwich_assets/images/pic_footer_5.jpg" alt=""/><span className="hover"></span></a></li>
+    										<li><a href="#"><img src="http://www.randyjap.com/sandwich_assets/images/pic_footer_6.jpg" alt=""/><span className="hover"></span></a></li>
     									</ul>
     								</div>
     							</div>

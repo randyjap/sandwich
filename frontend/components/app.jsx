@@ -3,9 +3,9 @@ import HeaderContainer from './header/header_container';
 import FooterContainer from './footer/footer_container';
 
 const App = ({ children, router }) => (
-  <div>
+  <body className="sticky_footer">
     { children }
-  </div>
+  </body>
 );
 
 export default App;
