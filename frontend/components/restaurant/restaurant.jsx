@@ -30,11 +30,11 @@ class Restaurant extends React.Component{
             <li><a href="#">Downtown Los Angeles</a></li>
           </ul>
         </div>
-        <div className="main-body">
+        <div className="">
           <MapContainer />
-          <div className="article-text">
-            <p className="article-title">{this.state.article.title}</p>
-            <div className="article-body">
+          <div className="">
+            <p className="">{this.state.article.title}</p>
+            <div className="">
               <RawHtml.mycooltag>{this.state.article.article}</RawHtml.mycooltag>
             </div>
           </div>
