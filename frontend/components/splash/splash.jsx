@@ -123,17 +123,11 @@ class Splash extends React.Component{
       										<li><a href="#">Sed ut perspiciatis unde omnis iste natus sit volup.</a></li>
       										<li><a href="#">Omnis iste natus sit volup.</a></li>
       										<li><a href="#">Sed ut perspiciatis unde omnis iste natus sit volup.</a></li>
+      										<li><a href="#">Sed ut perspiciatis unde omnis iste natus sit volup.</a></li>
       									</ul>
       								</div>
 
-      								<div className="menu_type_3">
-      									<ul>
-      										<li><a href="#">Standart post</a></li>
-      										<li><a href="#">Gallery Post format</a></li>
-      										<li><a href="#">Video Post Format</a></li>
-      										<li><a href="#">Modify Post</a></li>
-      									</ul>
-      								</div>
+
       							</div>
 
       							<div className="dropdown" data-menu="taipei">
@@ -160,17 +154,10 @@ class Splash extends React.Component{
       										<li><a href="#">Sed ut perspiciatis unde omnis iste natus sit volup.</a></li>
       										<li><a href="#">Omnis iste natus sit volup.</a></li>
       										<li><a href="#">Sed ut perspiciatis unde omnis iste natus sit volup.</a></li>
+      										<li><a href="#">Sed ut perspiciatis unde omnis iste natus sit volup.</a></li>
       									</ul>
       								</div>
 
-      								<div className="menu_type_3">
-      									<ul>
-      										<li><a href="#">Standart post</a></li>
-      										<li><a href="#">Gallery Post format</a></li>
-      										<li><a href="#">Video Post Format</a></li>
-      										<li><a href="#">Modify Post</a></li>
-      									</ul>
-      								</div>
       							</div>
 
       							<div className="dropdown" data-menu="sf">
@@ -197,17 +184,10 @@ class Splash extends React.Component{
       										<li><a href="#">Sed ut perspiciatis unde omnis iste natus sit volup.</a></li>
       										<li><a href="#">Omnis iste natus sit volup.</a></li>
       										<li><a href="#">Sed ut perspiciatis unde omnis iste natus sit volup.</a></li>
+      										<li><a href="#">Sed ut perspiciatis unde omnis iste natus sit volup.</a></li>
       									</ul>
       								</div>
 
-      								<div className="menu_type_3">
-      									<ul>
-      										<li><a href="#">Standart post</a></li>
-      										<li><a href="#">Gallery Post format</a></li>
-      										<li><a href="#">Video Post Format</a></li>
-      										<li><a href="#">Modify Post</a></li>
-      									</ul>
-      								</div>
       							</div>
       						</div>
       					</div>
@@ -244,7 +224,7 @@ class Splash extends React.Component{
 
       				<div className="block_general_title_1 w_margin_1">
       					<h1>FEATURED POSTS</h1>
-      					<h2>YOUR TICKET EXCLUSIVE TO TASTE</h2>
+      					<h2>YOUR EXCLUSIVE TICKET TO TASTE</h2>
       				</div>
 
       				<div className="block_posts type_2">
