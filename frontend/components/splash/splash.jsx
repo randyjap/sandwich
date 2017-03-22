@@ -244,7 +244,7 @@ class Splash extends React.Component{
 
       				<div className="block_general_title_1 w_margin_1">
       					<h1>FEATURED POSTS</h1>
-      					<h2>ENTER THE SUB TITLE FOR THIS SECTION</h2>
+      					<h2>YOUR TICKET EXCLUSIVE TO TASTE</h2>
       				</div>
 
       				<div className="block_posts type_2">
@@ -323,7 +323,7 @@ class Splash extends React.Component{
 
       				<div className="block_general_title_1 w_margin_1">
       					<h1>LATEST ARTICLES</h1>
-      					<h2>ENTER THE SUB TITLE FOR THIS SECTION</h2>
+      					<h2>OUR LATEST BITES</h2>
       				</div>
 
       				<div className="main_content">
@@ -566,14 +566,20 @@ class Splash extends React.Component{
       						<div className="sidebar_title_1">Social</div>
 
       						<div className="block_sidebar_social">
+                    <div className="row tw">
+                      <div className="text">16,321 Followers</div>
+
+                      <div className="button"><a href="#">Follow</a></div>
+                    </div>
+
       							<div className="row fb">
       								<div className="text">25,750 Fans</div>
 
       								<div className="button"><a href="#">Like</a></div>
       							</div>
 
-      							<div className="row tw">
-      								<div className="text">16,321 Followers</div>
+      							<div className="row ig">
+      								<div className="text">25,750 Followers</div>
 
       								<div className="button"><a href="#">Follow</a></div>
       							</div>
@@ -587,6 +593,7 @@ class Splash extends React.Component{
       					</aside>
 
       					<aside>
+                  Advertisement
       						<div className="block_banner_1"><a href="#"><img src="http://www.randyjap.com/sandwich_assets/images/banner_1.jpg" alt=""/></a></div>
       					</aside>
 
@@ -704,39 +711,17 @@ class Splash extends React.Component{
       						<div className="block_footer_widgets">
       							<div className="column">
       								<div className="block_footer_categories">
-      									<h3>Posts Categories</h3>
+      									<h3>Locations</h3>
 
       									<ul>
-      										<li><a href="category_photography.html">PHOTOGRAPHY</a></li>
-      										<li><a href="category_design.html">DESIGN</a></li>
-      										<li><a href="category_fashion.html">FASHION</a></li>
-      										<li><a href="category_reviews.html">REVIEWS</a></li>
-      										<li><a href="category_music.html">MUSIC</a></li>
-      										<li><a href="category_technology.html">TECHNOLOGY</a></li>
-      										<li><a href="category_life.html">LIFE</a></li>
-      										<li><a href="category_travel.html">TRAVEL</a></li>
+      										<li><a href="#">DOWNTOWN LA</a></li>
+      										<li><a href="#">TAIPEI</a></li>
+      										<li><a href="#">SAN FRANCISCO</a></li>
       									</ul>
       								</div>
       							</div>
 
       							<div className="column">
-      								<div className="block_footer_tags">
-      									<h3>Tags cloud</h3>
-
-      									<ul>
-      										<li><a href="#">Peoples</a></li>
-      										<li><a href="#">Design</a></li>
-      										<li><a href="#">Technology</a></li>
-      										<li><a href="#">Travel</a></li>
-      										<li><a href="#">Music</a></li>
-      										<li><a href="#">Photography</a></li>
-      										<li><a href="#">Fashion</a></li>
-      										<li><a href="#">Creative</a></li>
-      										<li><a href="#">Apple</a></li>
-      										<li><a href="#">News</a></li>
-      										<li><a href="#">Development</a></li>
-      									</ul>
-      								</div>
 
       								<div className="block_footer_twitter">
       									<h3>Twitter</h3>
@@ -753,7 +738,6 @@ class Splash extends React.Component{
       									<h3>Instagram</h3>
 
       									<ul id="instafeed">
-      										<li><a href="#"><img src="http://www.randyjap.com/sandwich_assets/images/pic_footer_1.jpg" alt=""/><span className="hover"></span></a></li>
       									</ul>
       								</div>
       							</div>
@@ -766,11 +750,9 @@ class Splash extends React.Component{
       						<div className="block_bottom_menu">
       							<nav>
       								<ul>
-      									<li><a href="index.html">HOMEPAGE</a></li>
-      									<li><a href="blog_post.html">POSTS</a></li>
-      									<li><a href="category_photography.html">CATEGORIES</a></li>
-      									<li><a href="full_width.html">PAGES</a></li>
-      									<li><a href="shortcodes.html">FEATURES</a></li>
+      									<li><a href="#">CONTACT</a></li>
+      									<li><a href="#">PRIVACY POLICY</a></li>
+      									<li><a href="#">ADVERTISE</a></li>
       								</ul>
       							</nav>
       						</div>

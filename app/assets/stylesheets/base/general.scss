@@ -1,9 +1,13 @@
 .logo {
   text-align: center;
-  font-size: 100px;
+  font-size: 10vw;
   padding: 0;
   font-family: 'Montserrat', Helvetica, Arial, sans-serif;
   font-weight: 600;
+}
+
+.logo > img {
+  width: 100%;
 }
 
 .block_slider_type_2 .caption.type_1 {
@@ -16,6 +20,13 @@ img.instafeed {
 }
 
 header .middle {
-    padding-top: 30px;
-    padding-bottom: 30px;
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
+
+.block_responsive_menu {
+  display:none;
+}
+
+.block_sidebar_social .row.ig .text {background-image:url(http://www.randyjap.com/sandwich_assets/layout/images/icon_ig_1.jpg);}
+.block_sidebar_social .row.ig .text {background-image:url(http://www.randyjap.com/sandwich_assets/layout/images/icon_ig_1_r.jpg); background-size:31px 31px;}
