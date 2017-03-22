@@ -418,40 +418,8 @@ class Splash extends React.Component{
 
       						<article className="post_type_4">
       							<div className="feature">
-      								<div className="slider">
-      									<div id="post_slider_1" className="flexslider">
-      										<ul className="slides">
-      											<li><img src="http://www.randyjap.com/sandwich_assets/images/pic_post_2_5.jpg" alt=""/></li>
-      											<li><img src="http://www.randyjap.com/sandwich_assets/images/pic_post_2_9.jpg" alt=""/></li>
-      											<li><img src="http://www.randyjap.com/sandwich_assets/images/pic_post_2_10.jpg" alt=""/></li>
-      										</ul>
-      									</div>
-
-
-      								</div>
-      							</div>
-
-      							<div className="content">
-      								<div className="info">
-      									<div className="date">March 27, 2017</div>
-      									<div className="stats">
-      										<div className="likes">15</div>
-      										<div className="comments">7</div>
-      									</div>
-      								</div>
-
-      								<div className="title">
-      									<a href="blog_post.html">Sed ut perspiciatis unde omnis iste natus sit volup.</a>
-      								</div>
-
-      								<div className="line_1"></div>
-      							</div>
-      						</article>
-
-      						<article className="post_type_4">
-      							<div className="feature">
       								<div className="image">
-      									<a href="blog_post_video.html"><img src="http://www.randyjap.com/sandwich_assets/images/pic_post_2_6.jpg" alt=""/><span className="hover no_icon"></span><span className="icon video"></span></a>
+      									<a href="blog_post.html"><img src="http://www.randyjap.com/sandwich_assets/images/pic_post_2_8.jpg" alt=""/><span className="hover"></span></a>
       								</div>
       							</div>
 
@@ -465,36 +433,7 @@ class Splash extends React.Component{
       								</div>
 
       								<div className="title">
-      									<a href="blog_post_video.html">Ut perspiciatis unde omnis iste natus sit relative.</a>
-      								</div>
-
-      								<div className="line_1"></div>
-      							</div>
-      						</article>
-
-      						<article className="post_type_4">
-      							<div className="feature">
-      								<div className="image">
-      									<a href="blog_post_review.html"><img src="http://www.randyjap.com/sandwich_assets/images/pic_post_2_7.jpg" alt=""/><span className="hover"></span></a>
-      								</div>
-
-      								<div className="review">
-      									<div className="num">7.5</div>
-      									<div className="type">score</div>
-      								</div>
-      							</div>
-
-      							<div className="content">
-      								<div className="info">
-      									<div className="date">March 27, 2017</div>
-      									<div className="stats">
-      										<div className="likes">15</div>
-      										<div className="comments">7</div>
-      									</div>
-      								</div>
-
-      								<div className="title">
-      									<a href="blog_post_review.html">Ratione voluptatem sequi nesciunt. Neque porro.</a>
+      									<a href="blog_post.html">Qumquam eius modi tempora.</a>
       								</div>
 
       								<div className="line_1"></div>
@@ -585,6 +524,11 @@ class Splash extends React.Component{
       					</aside>
 
       					<aside>
+                  Advertisement
+      						<div className="block_banner_1"><a href="#"><img src="http://www.randyjap.com/sandwich_assets/images/banner_1.jpg" alt=""/></a></div>
+      					</aside>
+
+      					<aside>
       						<div className="sidebar_title_1">Popular posts</div>
 
       						<div className="block_sidebar_popular_posts">
@@ -627,55 +571,6 @@ class Splash extends React.Component{
       									<div className="info">
       										<div className="date">March 27, 2017</div>
       									</div>
-      								</div>
-      							</article>
-      						</div>
-      					</aside>
-
-      					<aside>
-      						<div className="sidebar_title_1">Most commented</div>
-
-      						<div className="block_sidebar_most_commented">
-      							<article>
-      								<a href="#">
-      									<span className="num">12<span className="tail"></span></span>
-      									<span className="title">Quae ab illo inventore veritatis et quasi.</span>
-      								</a>
-      							</article>
-
-      							<article>
-      								<a href="#">
-      									<span className="num">8<span className="tail"></span></span>
-      									<span className="title">Fugit, sed quia consequuntur.</span>
-      								</a>
-      							</article>
-
-      							<article>
-      								<a href="#">
-      									<span className="num">7<span className="tail"></span></span>
-      									<span className="title">Sed quia consequuntur magni dolores eos qui.</span>
-      								</a>
-      							</article>
-      						</div>
-      					</aside>
-
-      					<aside>
-      						<div className="sidebar_title_1">Latest Comments</div>
-
-      						<div className="block_sidebar_latest_comments">
-      							<article>
-      								<div className="num">1</div>
-      								<div className="content">
-      									<div className="author"><span>Mark Summers</span> says:</div>
-      									<div className="comment">Aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione.</div>
-      								</div>
-      							</article>
-
-      							<article>
-      								<div className="num">2</div>
-      								<div className="content">
-      									<div className="author"><span>Sara hornet</span> says:</div>
-      									<div className="comment">Magni dolores eos qui ratione voluptatem sequi nesciunt.</div>
       								</div>
       							</article>
       						</div>
