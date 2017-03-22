@@ -80,7 +80,11 @@ class Splash extends React.Component{
 
       				<section className="middle">
       					<div className="inner">
-      						<h1 className="logo">Taste Terminal</h1>
+
+      						<h1 className="logo">
+                    <img src="http://res.cloudinary.com/dkympkwdz/image/upload/v1490186761/ad_banner_hhhwse.png"/>
+                    Taste Terminal
+                  </h1>
       					</div>
       				</section>
 
@@ -90,7 +94,8 @@ class Splash extends React.Component{
       							<nav>
       								<ul>
       									<li data-content="los-angeles"><a href="#">DOWNTOWN LA</a><div className="tail"></div></li>
-      									<li data-content="taipei"><a href="#">Taipei</a><div className="tail"></div></li>
+      									<li data-content="taipei"><a href="#">TAIPEI</a><div className="tail"></div></li>
+      									<li data-content="sf"><a href="#">SAN FRANCISCO</a><div className="tail"></div></li>
       								</ul>
       							</nav>
 
@@ -132,11 +137,75 @@ class Splash extends React.Component{
       							</div>
 
       							<div className="dropdown" data-menu="taipei">
-      								<div className="menu_type_1">
+      								<div className="image_type_1">
+      									<div className="image">
+      										<a href="#"><img src="http://www.randyjap.com/sandwich_assets/images/pic_drop_1_1.jpg" alt=""/><span className="hover"></span></a>
+      									</div>
+
+      									<div className="title"><a href="#">Sed ut perspiciatis unde omnis iste.</a></div>
+      								</div>
+
+      								<div className="image_type_1">
+      									<div className="image">
+      										<a href="#"><img src="http://www.randyjap.com/sandwich_assets/images/pic_drop_1_2.jpg" alt=""/><span className="hover"></span></a>
+      									</div>
+
+      									<div className="title"><a href="#">Unde omnis iste natus sit volup.</a></div>
+      								</div>
+
+      								<div className="menu_type_2">
+      									<div className="title">Featured posts</div>
+
       									<ul>
-      										<li><a href="category_life.html">Category with slider</a></li>
-      										<li><a href="category_photography.html">Category masonry fullwidth</a></li>
-      										<li><a href="blog_post.html">Standard blog</a></li>
+      										<li><a href="#">Sed ut perspiciatis unde omnis iste natus sit volup.</a></li>
+      										<li><a href="#">Omnis iste natus sit volup.</a></li>
+      										<li><a href="#">Sed ut perspiciatis unde omnis iste natus sit volup.</a></li>
+      									</ul>
+      								</div>
+
+      								<div className="menu_type_3">
+      									<ul>
+      										<li><a href="#">Standart post</a></li>
+      										<li><a href="#">Gallery Post format</a></li>
+      										<li><a href="#">Video Post Format</a></li>
+      										<li><a href="#">Modify Post</a></li>
+      									</ul>
+      								</div>
+      							</div>
+
+      							<div className="dropdown" data-menu="sf">
+      								<div className="image_type_1">
+      									<div className="image">
+      										<a href="#"><img src="http://www.randyjap.com/sandwich_assets/images/pic_drop_1_1.jpg" alt=""/><span className="hover"></span></a>
+      									</div>
+
+      									<div className="title"><a href="#">Sed ut perspiciatis unde omnis iste.</a></div>
+      								</div>
+
+      								<div className="image_type_1">
+      									<div className="image">
+      										<a href="#"><img src="http://www.randyjap.com/sandwich_assets/images/pic_drop_1_2.jpg" alt=""/><span className="hover"></span></a>
+      									</div>
+
+      									<div className="title"><a href="#">Unde omnis iste natus sit volup.</a></div>
+      								</div>
+
+      								<div className="menu_type_2">
+      									<div className="title">Featured posts</div>
+
+      									<ul>
+      										<li><a href="#">Sed ut perspiciatis unde omnis iste natus sit volup.</a></li>
+      										<li><a href="#">Omnis iste natus sit volup.</a></li>
+      										<li><a href="#">Sed ut perspiciatis unde omnis iste natus sit volup.</a></li>
+      									</ul>
+      								</div>
+
+      								<div className="menu_type_3">
+      									<ul>
+      										<li><a href="#">Standart post</a></li>
+      										<li><a href="#">Gallery Post format</a></li>
+      										<li><a href="#">Video Post Format</a></li>
+      										<li><a href="#">Modify Post</a></li>
       									</ul>
       								</div>
       							</div>
