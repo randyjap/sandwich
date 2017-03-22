@@ -2,7 +2,6 @@ import React from 'react';
 import { Link } from 'react-router';
 import Slider from 'react-slick';
 import {getArticles} from './../../util/article_api_util';
-import RawHtml from 'react-raw-html';
 import Instafeed from 'instafeed.js';
 
 function slider_1() {
