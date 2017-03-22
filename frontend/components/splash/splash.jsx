@@ -254,7 +254,7 @@ class Splash extends React.Component{
       							<div className="info">
       								<div className="date">March 27, 2017</div>
       								<div className="stats">
-      									<div className="likes">15</div>
+      									<div className="views">15</div>
       									<div className="comments">7</div>
       								</div>
       							</div>
@@ -276,7 +276,7 @@ class Splash extends React.Component{
       							<div className="info">
       								<div className="date">March 27, 2017</div>
       								<div className="stats">
-      									<div className="likes">15</div>
+      									<div className="views">15</div>
       									<div className="comments">7</div>
       								</div>
       							</div>
@@ -298,7 +298,7 @@ class Splash extends React.Component{
       							<div className="info">
       								<div className="date">March 27, 2017</div>
       								<div className="stats">
-      									<div className="likes">15</div>
+      									<div className="views">15</div>
       									<div className="comments">7</div>
       								</div>
       							</div>
@@ -331,7 +331,7 @@ class Splash extends React.Component{
       								<div className="info">
       									<div className="date">March 27, 2017</div>
       									<div className="stats">
-      										<div className="likes">15</div>
+      										<div className="views">15</div>
       										<div className="comments">7</div>
       									</div>
       								</div>
@@ -355,7 +355,7 @@ class Splash extends React.Component{
       								<div className="info">
       									<div className="date">March 27, 2017</div>
       									<div className="stats">
-      										<div className="likes">15</div>
+      										<div className="views">15</div>
       										<div className="comments">7</div>
       									</div>
       								</div>
@@ -379,7 +379,7 @@ class Splash extends React.Component{
       								<div className="info">
       									<div className="date">March 27, 2017</div>
       									<div className="stats">
-      										<div className="likes">15</div>
+      										<div className="views">15</div>
       										<div className="comments">7</div>
       									</div>
       								</div>
@@ -403,7 +403,7 @@ class Splash extends React.Component{
       								<div className="info">
       									<div className="date">March 27, 2017</div>
       									<div className="stats">
-      										<div className="likes">15</div>
+      										<div className="views">15</div>
       										<div className="comments">7</div>
       									</div>
       								</div>
@@ -427,7 +427,7 @@ class Splash extends React.Component{
       								<div className="info">
       									<div className="date">March 27, 2017</div>
       									<div className="stats">
-      										<div className="likes">15</div>
+      										<div className="views">15</div>
       										<div className="comments">7</div>
       									</div>
       								</div>
@@ -451,7 +451,7 @@ class Splash extends React.Component{
       								<div className="info">
       									<div className="date">March 27, 2017</div>
       									<div className="stats">
-      										<div className="likes">15</div>
+      										<div className="views">15</div>
       										<div className="comments">7</div>
       									</div>
       								</div>
@@ -479,6 +479,7 @@ class Splash extends React.Component{
       						</ul>
 
       						<div className="info">Page 1 of 7</div>
+                  <a href="sandwich1.herokuapp.com/#/#disqus_thread">Test Count</a>
 
       						<div className="clearboth"></div>
       					</div>
