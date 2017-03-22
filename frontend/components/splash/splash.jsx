@@ -257,8 +257,7 @@ class Splash extends React.Component{
 
       						<div className="content">
       							<div className="info">
-      								<div className="tags"><a href="#">TRAVEL</a>, <a href="#">LIFE</a></div>
-      								<div className="date">27, 2013</div>
+      								<div className="date">March 27, 2017</div>
       								<div className="stats">
       									<div className="likes">15</div>
       									<div className="comments">7</div>
@@ -280,8 +279,7 @@ class Splash extends React.Component{
 
       						<div className="content">
       							<div className="info">
-      								<div className="tags"><a href="#">TRAVEL</a>, <a href="#">LIFE</a></div>
-      								<div className="date">27, 2013</div>
+      								<div className="date">March 27, 2017</div>
       								<div className="stats">
       									<div className="likes">15</div>
       									<div className="comments">7</div>
@@ -303,8 +301,7 @@ class Splash extends React.Component{
 
       						<div className="content">
       							<div className="info">
-      								<div className="tags"><a href="#">TRAVEL</a>, <a href="#">LIFE</a></div>
-      								<div className="date">27, 2013</div>
+      								<div className="date">March 27, 2017</div>
       								<div className="stats">
       									<div className="likes">15</div>
       									<div className="comments">7</div>
@@ -337,8 +334,7 @@ class Splash extends React.Component{
 
       							<div className="content">
       								<div className="info">
-      									<div className="tags"><a href="#">TRAVEL</a>, <a href="#">LIFE</a></div>
-      									<div className="date">27, 2013</div>
+      									<div className="date">March 27, 2017</div>
       									<div className="stats">
       										<div className="likes">15</div>
       										<div className="comments">7</div>
@@ -362,8 +358,7 @@ class Splash extends React.Component{
 
       							<div className="content">
       								<div className="info">
-      									<div className="tags"><a href="#">TRAVEL</a>, <a href="#">LIFE</a></div>
-      									<div className="date">27, 2013</div>
+      									<div className="date">March 27, 2017</div>
       									<div className="stats">
       										<div className="likes">15</div>
       										<div className="comments">7</div>
@@ -387,8 +382,7 @@ class Splash extends React.Component{
 
       							<div className="content">
       								<div className="info">
-      									<div className="tags"><a href="#">TRAVEL</a>, <a href="#">LIFE</a></div>
-      									<div className="date">27, 2013</div>
+      									<div className="date">March 27, 2017</div>
       									<div className="stats">
       										<div className="likes">15</div>
       										<div className="comments">7</div>
@@ -412,8 +406,7 @@ class Splash extends React.Component{
 
       							<div className="content">
       								<div className="info">
-      									<div className="tags"><a href="#">TRAVEL</a>, <a href="#">LIFE</a></div>
-      									<div className="date">27, 2013</div>
+      									<div className="date">March 27, 2017</div>
       									<div className="stats">
       										<div className="likes">15</div>
       										<div className="comments">7</div>
@@ -445,8 +438,7 @@ class Splash extends React.Component{
 
       							<div className="content">
       								<div className="info">
-      									<div className="tags"><a href="#">TRAVEL</a>, <a href="#">LIFE</a></div>
-      									<div className="date">27, 2013</div>
+      									<div className="date">March 27, 2017</div>
       									<div className="stats">
       										<div className="likes">15</div>
       										<div className="comments">7</div>
@@ -470,8 +462,7 @@ class Splash extends React.Component{
 
       							<div className="content">
       								<div className="info">
-      									<div className="tags"><a href="#">TRAVEL</a>, <a href="#">LIFE</a></div>
-      									<div className="date">27, 2013</div>
+      									<div className="date">March 27, 2017</div>
       									<div className="stats">
       										<div className="likes">15</div>
       										<div className="comments">7</div>
@@ -500,8 +491,7 @@ class Splash extends React.Component{
 
       							<div className="content">
       								<div className="info">
-      									<div className="tags"><a href="#">TRAVEL</a>, <a href="#">LIFE</a></div>
-      									<div className="date">27, 2013</div>
+      									<div className="date">March 27, 2017</div>
       									<div className="stats">
       										<div className="likes">15</div>
       										<div className="comments">7</div>
@@ -525,8 +515,7 @@ class Splash extends React.Component{
 
       							<div className="content">
       								<div className="info">
-      									<div className="tags"><a href="#">TRAVEL</a>, <a href="#">LIFE</a></div>
-      									<div className="date">27, 2013</div>
+      									<div className="date">March 27, 2017</div>
       									<div className="stats">
       										<div className="likes">15</div>
       										<div className="comments">7</div>
@@ -610,8 +599,7 @@ class Splash extends React.Component{
       									</div>
 
       									<div className="info">
-      										<div className="tags"><a href="#">TRAVEL</a>, <a href="#">LIFE</a></div>
-      										<div className="date">27, 2013</div>
+      										<div className="date">March 27, 2017</div>
       									</div>
       								</div>
       							</article>
@@ -625,8 +613,7 @@ class Splash extends React.Component{
       									</div>
 
       									<div className="info">
-      										<div className="tags"><a href="#">TRAVEL</a>, <a href="#">LIFE</a></div>
-      										<div className="date">27, 2013</div>
+      										<div className="date">March 27, 2017</div>
       									</div>
       								</div>
       							</article>
@@ -640,8 +627,7 @@ class Splash extends React.Component{
       									</div>
 
       									<div className="info">
-      										<div className="tags"><a href="#">TRAVEL</a>, <a href="#">LIFE</a></div>
-      										<div className="date">27, 2013</div>
+      										<div className="date">March 27, 2017</div>
       									</div>
       								</div>
       							</article>
