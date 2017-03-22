@@ -2,7 +2,8 @@ import React from 'react';
 import { Link } from 'react-router';
 import Slider from 'react-slick';
 import {getArticles} from './../../util/article_api_util';
-import RawHtml from "react-raw-html";
+import RawHtml from 'react-raw-html';
+import Instafeed from 'instafeed.js';
 
 function slider_1() {
   jQuery(function() {
@@ -15,6 +16,17 @@ function slider_2() {
     init_slider_2('#slider');
   });
 }
+
+var userFeed = new Instafeed({
+    get: 'user',
+    userId: '1570804557',
+    accessToken: '1570804557.1677ed0.8dde9b4c29c64d3582444840b6677bc6',
+    clientId: '7aa873bfe6a74a1ea4b4783d395bbfb7',
+    sortBy: 'most-recent',
+    limit: 16,
+    resolution: 'thumbnail',
+    template: '<li><a href="{{link}}"><img class="instafeed" src="{{image}}" alt=""/><span class="hover"></span></a></li>'
+});
 
 class Splash extends React.Component{
   constructor(props){
@@ -33,6 +45,7 @@ class Splash extends React.Component{
 
     slider_1();
     slider_2();
+    userFeed.run();
   }
 
   render(){
@@ -54,11 +67,10 @@ class Splash extends React.Component{
 
       						<div className="block_top_social">
       							<ul className="general_social_1">
-      								<li><a href="#" className="social_1">Twitter</a></li>
-      								<li><a href="#" className="social_2">Facebook</a></li>
-      								<li><a href="#" className="social_3">Vimeo</a></li>
-      								<li><a href="#" className="social_4">Pinterest</a></li>
-      								<li><a href="#" className="social_5">Instagram</a></li>
+      								<li><a target="_blank" href="https://twitter.com/tasteterminal" className="social_1">Twitter</a></li>
+      								<li><a target="_blank" href="https://www.facebook.com/tasteterminal/" className="social_2">Facebook</a></li>
+      								<li><a target="_blank" href="https://vimeo.com/tasteterminal/" className="social_3">Vimeo</a></li>
+      								<li><a target="_blank" href="https://www.instagram.com/secretstan/" className="social_5">Instagram</a></li>
       							</ul>
       						</div>
 
@@ -658,9 +670,11 @@ class Splash extends React.Component{
       								</div>
 
       								<div className="block_footer_twitter">
-      									<h3>Twitter Widget</h3>
+      									<h3>Twitter</h3>
 
-      									<div id="tweets"></div>
+      									<div id="tweets">
+                          <a className="twitter-timeline" data-width="400" data-height="200" data-theme="dark" href="https://twitter.com/TasteTerminal">Tweets by TasteTerminal</a>
+      									</div>
 
       								</div>
       							</div>
@@ -669,13 +683,8 @@ class Splash extends React.Component{
       								<div className="block_footer_pics">
       									<h3>Instagram</h3>
 
-      									<ul>
+      									<ul id="instafeed">
       										<li><a href="#"><img src="http://www.randyjap.com/sandwich_assets/images/pic_footer_1.jpg" alt=""/><span className="hover"></span></a></li>
-      										<li><a href="#"><img src="http://www.randyjap.com/sandwich_assets/images/pic_footer_2.jpg" alt=""/><span className="hover"></span></a></li>
-      										<li><a href="#"><img src="http://www.randyjap.com/sandwich_assets/images/pic_footer_3.jpg" alt=""/><span className="hover"></span></a></li>
-      										<li><a href="#"><img src="http://www.randyjap.com/sandwich_assets/images/pic_footer_4.jpg" alt=""/><span className="hover"></span></a></li>
-      										<li><a href="#"><img src="http://www.randyjap.com/sandwich_assets/images/pic_footer_5.jpg" alt=""/><span className="hover"></span></a></li>
-      										<li><a href="#"><img src="http://www.randyjap.com/sandwich_assets/images/pic_footer_6.jpg" alt=""/><span className="hover"></span></a></li>
       									</ul>
       								</div>
       							</div>
@@ -701,7 +710,7 @@ class Splash extends React.Component{
 
       				<section className="bottom">
       					<div className="inner">
-      						<div className="block_copyrights"><p>&copy; Copyright 2013 by WebLionMedia. All Rights Reserved.</p></div>
+      						<div className="block_copyrights"><p>&copy; Copyright {new Date().getFullYear()} by Taste Terminal. All Rights Reserved.</p></div>
       					</div>
       				</section>
       			</div>
