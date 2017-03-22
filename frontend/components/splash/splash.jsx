@@ -45,63 +45,6 @@ class Splash extends React.Component{
       					<div className="inner">
       						<div className="block_top_menu">
       							<nav>
-      								<ul>
-      									<li className="current_page_item"><a href="index.html">HOMEPAGE</a>
-
-      										<ul>
-      											<li><a href="index.html">Home Style 1</a></li>
-      											<li className="current_page_item"><a href="index_2.html">Home Style 2</a></li>
-      											<li><a href="index_3.html">Home Style 3</a></li>
-      										</ul>
-      									</li>
-      									<li><a href="blog_post.html">POSTS</a>
-
-      										<ul>
-      											<li><a href="blog_post.html">Blog Post</a></li>
-      											<li><a href="blog_post_gallery.html">Gallery Post</a></li>
-      											<li><a href="blog_post_video.html">Video Post</a></li>
-      											<li><a href="blog_post_modify.html">Modify Post</a></li>
-      											<li><a href="blog_post_modify_comments.html">Modify Post with Comments</a></li>
-      											<li><a href="blog_post_slider.html">Post with Slider</a></li>
-      											<li><a href="blog_post_review.html">Review Post</a></li>
-      											<li><a href="blog_post_music.html">Music Post</a></li>
-      										</ul>
-      									</li>
-      									<li><a href="category_photography.html">CATEGORIES</a>
-
-      										<ul>
-      											<li><a href="category_photography.html">Photography</a></li>
-      											<li><a href="category_life.html">Life</a></li>
-      											<li><a href="category_fashion.html">Fashion</a></li>
-      											<li><a href="category_technology.html">Technology</a></li>
-      											<li><a href="category_travel.html">Travel</a></li>
-      											<li><a href="category_design.html">Design</a></li>
-      											<li><a href="category_music.html">Music</a></li>
-      											<li><a href="category_reviews.html">Reviews</a></li>
-      										</ul>
-      									</li>
-      									<li><a href="full_width.html">PAGES</a>
-
-      										<ul>
-      											<li><a href="full_width.html">Full Width Page</a></li>
-      											<li><a href="about_author.html">About Author</a></li>
-      											<li><a href="search.html">Search</a></li>
-      											<li><a href="archives.html">Archives</a></li>
-      											<li><a href="galleries.html">Galleries</a></li>
-      											<li><a href="contact.html">Contact Us</a></li>
-      											<li><a href="404.html">404 Page</a></li>
-      											<li><a href="rules.html">Forum Rules</a></li>
-      										</ul>
-      									</li>
-      									<li><a href="shortcodes.html">FEATURES</a>
-
-      										<ul>
-      											<li><a href="shortcodes.html">Shortcodes</a></li>
-      											<li><a href="typography.html">Typography</a></li>
-      											<li><a href="columns.html">Columns</a></li>
-      										</ul>
-      									</li>
-      								</ul>
       							</nav>
       						</div>
 
@@ -125,7 +68,7 @@ class Splash extends React.Component{
 
       				<section className="middle">
       					<div className="inner">
-      						<div id="logo_top"><a href="index.html"><img src="http://www.randyjap.com/sandwich_assets/images/logo_top.png" alt="Enterprise" title="Enterprise"/></a></div>
+      						<h1 className="logo">Taste Terminal</h1>
       					</div>
       				</section>
 
@@ -134,18 +77,12 @@ class Splash extends React.Component{
       						<div className="block_secondary_menu">
       							<nav>
       								<ul>
-      									<li data-content="photography"><a href="category_photography.html">PHOTOGRAPHY</a><div className="tail"></div></li>
-      									<li data-content="design"><a href="category_design.html">DESIGN</a><div className="tail"></div></li>
-      									<li data-content="fashion"><a href="category_fashion.html">FASHION</a></li>
-      									<li data-content="reviews"><a href="category_reviews.html">REVIEWS</a></li>
-      									<li data-content="music"><a href="category_music.html">MUSIC</a></li>
-      									<li data-content="technology"><a href="category_technology.html">TECHNOLOGY</a></li>
-      									<li data-content="life"><a href="category_life.html">LIFE</a></li>
-      									<li data-content="travel"><a href="category_travel.html">TRAVEL</a></li>
+      									<li data-content="los-angeles"><a href="#">DOWNTOWN LA</a><div className="tail"></div></li>
+      									<li data-content="taipei"><a href="#">Taipei</a><div className="tail"></div></li>
       								</ul>
       							</nav>
 
-      							<div className="dropdown" data-menu="photography">
+      							<div className="dropdown" data-menu="los-angeles">
       								<div className="image_type_1">
       									<div className="image">
       										<a href="#"><img src="http://www.randyjap.com/sandwich_assets/images/pic_drop_1_1.jpg" alt=""/><span className="hover"></span></a>
@@ -182,7 +119,7 @@ class Splash extends React.Component{
       								</div>
       							</div>
 
-      							<div className="dropdown" data-menu="design">
+      							<div className="dropdown" data-menu="taipei">
       								<div className="menu_type_1">
       									<ul>
       										<li><a href="category_life.html">Category with slider</a></li>
@@ -209,20 +146,6 @@ class Splash extends React.Component{
       									<div className="text_1_2">Mountains in Switzerland</div>
       									<div className="text_1_3"><a href="#" className="general_button_type_1">Read More</a></div>
       								</div>
-
-      								<div className="caption type_2">
-      									<img src="http://www.randyjap.com/sandwich_assets/images/pic_slider_2_1_2.jpg" alt=""/>
-      									<div className="text_2_1">Travel, PHOTOGRAPHY</div>
-      									<div className="text_2_2">My love - new york</div>
-      									<div className="text_2_3"><a href="#" className="general_button_type_2">Read More</a></div>
-      								</div>
-
-      								<div className="caption type_3">
-      									<img src="http://www.randyjap.com/sandwich_assets/images/pic_slider_2_1_3.jpg" alt=""/>
-      									<div className="text_3_1">Life, PHOTOGRAPHY</div>
-      									<div className="text_3_2">My Awesome workplace</div>
-      									<div className="text_3_3"><a href="#" className="general_button_type_2">Read More</a></div>
-      								</div>
       							</li>
 
       							<li>
@@ -231,20 +154,6 @@ class Splash extends React.Component{
       									<div className="text_1_1">Life, PHOTOGRAPHY</div>
       									<div className="text_1_2">Flying over the mountains</div>
       									<div className="text_1_3"><a href="#" className="general_button_type_1">Read More</a></div>
-      								</div>
-
-      								<div className="caption type_2">
-      									<img src="http://www.randyjap.com/sandwich_assets/images/pic_slider_2_2_2.jpg" alt=""/>
-      									<div className="text_2_1">Travel, PHOTOGRAPHY</div>
-      									<div className="text_2_2">Young Businessman</div>
-      									<div className="text_2_3"><a href="#" className="general_button_type_2">Read More</a></div>
-      								</div>
-
-      								<div className="caption type_3">
-      									<img src="http://www.randyjap.com/sandwich_assets/images/pic_slider_2_2_3.jpg" alt=""/>
-      									<div className="text_3_1">People, Life</div>
-      									<div className="text_3_2">The Guy on the field</div>
-      									<div className="text_3_3"><a href="#" className="general_button_type_2">Read More</a></div>
       								</div>
       							</li>
       						</ul>
