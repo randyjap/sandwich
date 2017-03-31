@@ -16,12 +16,14 @@ ActiveRecord::Schema.define(version: 20170328000225) do
   enable_extension "plpgsql"
 
   create_table "articles", force: :cascade do |t|
-    t.integer  "author_id",  null: false
-    t.string   "title",      null: false
-    t.text     "article",    null: false
-    t.date     "date",       null: false
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
+    t.integer  "author_id",              null: false
+    t.string   "title",                  null: false
+    t.text     "article",                null: false
+    t.date     "date",                   null: false
+    t.integer  "likes",      default: 0
+    t.integer  "views",      default: 0
+    t.datetime "created_at",             null: false
+    t.datetime "updated_at",             null: false
   end
 
   create_table "media", force: :cascade do |t|
