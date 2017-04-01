@@ -56,10 +56,10 @@ class Splash extends React.Component{
     };
     */
     (function() { // DON'T EDIT BELOW THIS LINE
-    var d = document, s = d.createElement('script');
-    s.src = 'https://http-sandwich1-herokuapp-com.disqus.com/embed.js';
-    s.setAttribute('data-timestamp', +new Date());
-    (d.head || d.body).appendChild(s);
+      var d = document, s = d.createElement('script');
+      s.src = 'https://http-sandwich1-herokuapp-com.disqus.com/embed.js';
+      s.setAttribute('data-timestamp', +new Date());
+      (d.head || d.body).appendChild(s);
     })();
   }
 
@@ -117,7 +117,7 @@ class Splash extends React.Component{
       							<div className="dropdown" data-menu="los-angeles">
       								<div className="image_type_1">
       									<div className="image">
-      										<a href="#"><img src="http://www.randyjap.com/sandwich_assets/images/pic_drop_1_1.jpg" alt=""/><span className="hover"></span></a>
+      										<a href="#"><img src="http://res.cloudinary.com/dkympkwdz/image/upload/c_scale,h_496,w_671/v1489010716/example_pqoqsl.jpg" alt=""/><span className="hover"></span></a>
       									</div>
 
       									<div className="title"><a href="#">Sed ut perspiciatis unde omnis iste.</a></div>
@@ -125,7 +125,7 @@ class Splash extends React.Component{
 
       								<div className="image_type_1">
       									<div className="image">
-      										<a href="#"><img src="http://www.randyjap.com/sandwich_assets/images/pic_drop_1_2.jpg" alt=""/><span className="hover"></span></a>
+      										<a href="#"><img src="http://res.cloudinary.com/dkympkwdz/image/upload/c_scale,h_496,w_671/v1489010716/example_pqoqsl.jpg" alt=""/><span className="hover"></span></a>
       									</div>
 
       									<div className="title"><a href="#">Unde omnis iste natus sit volup.</a></div>
@@ -148,7 +148,7 @@ class Splash extends React.Component{
       							<div className="dropdown" data-menu="taipei">
       								<div className="image_type_1">
       									<div className="image">
-      										<a href="#"><img src="http://www.randyjap.com/sandwich_assets/images/pic_drop_1_1.jpg" alt=""/><span className="hover"></span></a>
+      										<a href="#"><img src="http://res.cloudinary.com/dkympkwdz/image/upload/c_scale,h_496,w_671/v1489010716/example_pqoqsl.jpg" alt=""/><span className="hover"></span></a>
       									</div>
 
       									<div className="title"><a href="#">Sed ut perspiciatis unde omnis iste.</a></div>
@@ -156,7 +156,7 @@ class Splash extends React.Component{
 
       								<div className="image_type_1">
       									<div className="image">
-      										<a href="#"><img src="http://www.randyjap.com/sandwich_assets/images/pic_drop_1_2.jpg" alt=""/><span className="hover"></span></a>
+      										<a href="#"><img src="http://res.cloudinary.com/dkympkwdz/image/upload/c_scale,h_496,w_671/v1489010716/example_pqoqsl.jpg" alt=""/><span className="hover"></span></a>
       									</div>
 
       									<div className="title"><a href="#">Unde omnis iste natus sit volup.</a></div>
@@ -178,7 +178,7 @@ class Splash extends React.Component{
       							<div className="dropdown" data-menu="sf">
       								<div className="image_type_1">
       									<div className="image">
-      										<a href="#"><img src="http://www.randyjap.com/sandwich_assets/images/pic_drop_1_1.jpg" alt=""/><span className="hover"></span></a>
+      										<a href="#"><img src="http://res.cloudinary.com/dkympkwdz/image/upload/c_scale,h_496,w_671/v1489010716/example_pqoqsl.jpg" alt=""/><span className="hover"></span></a>
       									</div>
 
       									<div className="title"><a href="#">Sed ut perspiciatis unde omnis iste.</a></div>
@@ -186,7 +186,7 @@ class Splash extends React.Component{
 
       								<div className="image_type_1">
       									<div className="image">
-      										<a href="#"><img src="http://www.randyjap.com/sandwich_assets/images/pic_drop_1_2.jpg" alt=""/><span className="hover"></span></a>
+      										<a href="#"><img src="http://res.cloudinary.com/dkympkwdz/image/upload/c_scale,h_496,w_671/v1489010716/example_pqoqsl.jpg" alt=""/><span className="hover"></span></a>
       									</div>
 
       									<div className="title"><a href="#">Unde omnis iste natus sit volup.</a></div>
@@ -217,7 +217,7 @@ class Splash extends React.Component{
       						<ul className="slides">
       							<li>
       								<div className="caption type_1">
-      									<img src="http://www.randyjap.com/sandwich_assets/images/pic_slider_2_1_1.jpg" alt=""/>
+      									<img src="http://res.cloudinary.com/dkympkwdz/image/upload/c_scale,h_381,w_635/v1489010716/example_pqoqsl.jpg" alt=""/>
       									<div className="text_1_1">Travel, PHOTOGRAPHY</div>
       									<div className="text_1_2">Mountains in Switzerland</div>
       									<div className="text_1_3"><a href="#" className="general_button_type_1">Read More</a></div>
@@ -226,7 +226,7 @@ class Splash extends React.Component{
 
       							<li>
       								<div className="caption type_1">
-      									<img src="http://www.randyjap.com/sandwich_assets/images/pic_slider_2_2_1.jpg" alt=""/>
+      									<img src="http://res.cloudinary.com/dkympkwdz/image/upload/c_scale,h_381,w_635/v1489010716/example_pqoqsl.jpg" alt=""/>
       									<div className="text_1_1">Life, PHOTOGRAPHY</div>
       									<div className="text_1_2">Flying over the mountains</div>
       									<div className="text_1_3"><a href="#" className="general_button_type_1">Read More</a></div>
@@ -246,7 +246,7 @@ class Splash extends React.Component{
       					<article className="post_type_4">
       						<div className="feature">
       							<div className="image">
-      								<a href="blog_post.html"><img src="http://www.randyjap.com/sandwich_assets/images/pic_f_post_1_1.jpg" alt=""/><span className="hover"></span></a>
+      								<a href="blog_post.html"><img src="http://res.cloudinary.com/dkympkwdz/image/upload/c_scale,h_384,w_601/v1489010716/example_pqoqsl.jpg" alt=""/><span className="hover"></span></a>
       							</div>
       						</div>
 
@@ -268,7 +268,7 @@ class Splash extends React.Component{
       					<article className="post_type_4">
       						<div className="feature">
       							<div className="image">
-      								<a href="blog_post.html"><img src="http://www.randyjap.com/sandwich_assets/images/pic_f_post_1_2.jpg" alt=""/><span className="hover"></span></a>
+      								<a href="blog_post.html"><img src="http://res.cloudinary.com/dkympkwdz/image/upload/c_scale,h_384,w_601/v1489010716/example_pqoqsl.jpg" alt=""/><span className="hover"></span></a>
       							</div>
       						</div>
 
@@ -290,7 +290,7 @@ class Splash extends React.Component{
       					<article className="post_type_4">
       						<div className="feature">
       							<div className="image">
-      								<a href="blog_post.html"><img src="http://www.randyjap.com/sandwich_assets/images/pic_f_post_1_3.jpg" alt=""/><span className="hover"></span></a>
+      								<a href="blog_post.html"><img src="http://res.cloudinary.com/dkympkwdz/image/upload/c_scale,h_384,w_601/v1489010716/example_pqoqsl.jpg" alt=""/><span className="hover"></span></a>
       							</div>
       						</div>
 
@@ -323,7 +323,7 @@ class Splash extends React.Component{
       						<article className="post_type_4">
       							<div className="feature">
       								<div className="image">
-      									<a href="blog_post.html"><img src="http://www.randyjap.com/sandwich_assets/images/pic_post_2_1.jpg" alt=""/><span className="hover"></span></a>
+      									<a href="blog_post.html"><img src="http://res.cloudinary.com/dkympkwdz/image/upload/c_scale,h_384,w_601/v1489010716/example_pqoqsl.jpg" alt=""/><span className="hover"></span></a>
       								</div>
       							</div>
 
@@ -347,7 +347,7 @@ class Splash extends React.Component{
       						<article className="post_type_4">
       							<div className="feature">
       								<div className="image">
-      									<a href="blog_post.html"><img src="http://www.randyjap.com/sandwich_assets/images/pic_post_2_2.jpg" alt=""/><span className="hover"></span></a>
+      									<a href="blog_post.html"><img src="http://res.cloudinary.com/dkympkwdz/image/upload/c_scale,h_384,w_601/v1489010716/example_pqoqsl.jpg" alt=""/><span className="hover"></span></a>
       								</div>
       							</div>
 
@@ -371,7 +371,7 @@ class Splash extends React.Component{
       						<article className="post_type_4">
       							<div className="feature">
       								<div className="image">
-      									<a href="blog_post.html"><img src="http://www.randyjap.com/sandwich_assets/images/pic_post_2_3.jpg" alt=""/><span className="hover"></span></a>
+      									<a href="blog_post.html"><img src="http://res.cloudinary.com/dkympkwdz/image/upload/c_scale,h_384,w_601/v1489010716/example_pqoqsl.jpg" alt=""/><span className="hover"></span></a>
       								</div>
       							</div>
 
@@ -395,7 +395,7 @@ class Splash extends React.Component{
       						<article className="post_type_4">
       							<div className="feature">
       								<div className="image">
-      									<a href="blog_post.html"><img src="http://www.randyjap.com/sandwich_assets/images/pic_post_2_4.jpg" alt=""/><span className="hover"></span></a>
+      									<a href="blog_post.html"><img src="http://res.cloudinary.com/dkympkwdz/image/upload/c_scale,h_384,w_601/v1489010716/example_pqoqsl.jpg" alt=""/><span className="hover"></span></a>
       								</div>
       							</div>
 
@@ -419,7 +419,7 @@ class Splash extends React.Component{
       						<article className="post_type_4">
       							<div className="feature">
       								<div className="image">
-      									<a href="blog_post.html"><img src="http://www.randyjap.com/sandwich_assets/images/pic_post_2_8.jpg" alt=""/><span className="hover"></span></a>
+      									<a href="blog_post.html"><img src="http://res.cloudinary.com/dkympkwdz/image/upload/c_scale,h_384,w_601/v1489010716/example_pqoqsl.jpg" alt=""/><span className="hover"></span></a>
       								</div>
       							</div>
 
@@ -443,7 +443,7 @@ class Splash extends React.Component{
       						<article className="post_type_4">
       							<div className="feature">
       								<div className="image">
-      									<a href="blog_post.html"><img src="http://www.randyjap.com/sandwich_assets/images/pic_post_2_8.jpg" alt=""/><span className="hover"></span></a>
+      									<a href="blog_post.html"><img src="http://res.cloudinary.com/dkympkwdz/image/upload/c_scale,h_384,w_601/v1489010716/example_pqoqsl.jpg" alt=""/><span className="hover"></span></a>
       								</div>
       							</div>
 
@@ -534,7 +534,7 @@ class Splash extends React.Component{
 
       						<div className="block_sidebar_popular_posts">
       							<article>
-      								<div className="image"><a href="#"><img src="http://www.randyjap.com/sandwich_assets/images/pic_popular_post_1_1.jpg" alt=""/></a></div>
+      								<div className="image"><a href="#"><img src="http://res.cloudinary.com/dkympkwdz/image/upload/c_scale,h_66,w_86/v1489010716/example_pqoqsl.jpg" alt=""/></a></div>
 
       								<div className="content">
       									<div className="title">
@@ -548,7 +548,7 @@ class Splash extends React.Component{
       							</article>
 
       							<article>
-      								<div className="image"><a href="#"><img src="http://www.randyjap.com/sandwich_assets/images/pic_popular_post_1_2.jpg" alt=""/></a></div>
+      								<div className="image"><a href="#"><img src="http://res.cloudinary.com/dkympkwdz/image/upload/c_scale,h_66,w_86/v1489010716/example_pqoqsl.jpg" alt=""/></a></div>
 
       								<div className="content">
       									<div className="title">
@@ -562,7 +562,7 @@ class Splash extends React.Component{
       							</article>
 
       							<article>
-      								<div className="image"><a href="#"><img src="http://www.randyjap.com/sandwich_assets/images/pic_popular_post_1_3.jpg" alt=""/></a></div>
+      								<div className="image"><a href="#"><img src="http://res.cloudinary.com/dkympkwdz/image/upload/c_scale,h_66,w_86/v1489010716/example_pqoqsl.jpg" alt=""/></a></div>
 
       								<div className="content">
       									<div className="title">
