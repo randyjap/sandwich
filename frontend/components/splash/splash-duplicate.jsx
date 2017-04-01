@@ -31,11 +31,7 @@ class Splash extends React.Component{
   constructor(props){
     super(props);
     this.redirect = this.redirect.bind(this);
-    this.state = {
-      featured: {},
-      popular: {} ,
-      articles: {}
-    };
+    this.state = { articles: {} };
   }
 
   redirect(route){
@@ -43,9 +39,8 @@ class Splash extends React.Component{
   }
 
   componentDidMount(){
-    getArticles({featured: true}).then(articles => this.setState({featured: articles}));
-    getArticles({popular: true}).then(articles => this.setState({popular: articles}));
-    getArticles().then(articles => this.setState({articles: articles}));
+    let that = this;
+    getArticles().then(data => that.setState({articles: data}));
 
     slider_1();
     slider_2();
@@ -66,111 +61,6 @@ class Splash extends React.Component{
       s.setAttribute('data-timestamp', +new Date());
       (d.head || d.body).appendChild(s);
     })();
-  }
-
-  renderFeatured(){
-    let articles = this.state.featured;
-    articles = Object.keys(articles).map(key => {
-      let article = articles[key];
-      return (
-        <article key={key} className="post_type_4">
-          <div className="feature">
-            <div className="image">
-              <Link to={`articles/${key}`}><img src={`http://res.cloudinary.com/dkympkwdz/image/upload/c_scale,h_384,w_601/${article.media[0].url}`} alt=""/><span className="hover"></span></Link>
-            </div>
-          </div>
-
-          <div className="content">
-            <div className="info">
-              <div className="date">{article.date}</div>
-              <div className="stats">
-                <div className="views">{article.views}</div>
-                <div className="comments">7</div>
-              </div>
-            </div>
-
-            <div className="title">
-              <Link to={`articles/${key}`}>{article.title}</Link>
-            </div>
-          </div>
-        </article>
-      );
-    });
-
-    return (
-      <div className="block_posts type_2">
-        {articles}
-        <div className="clearboth"></div>
-        <div className="line_1"></div>
-      </div>
-    );
-  }
-
-  renderArticles(){
-    let articles = this.state.articles;
-    articles = Object.keys(articles).map(key => {
-      let article = articles[key];
-      return (
-        <article key={key} className="post_type_4">
-          <div className="feature">
-            <div className="image">
-              <Link to={`articles/${key}`}><img src={`http://res.cloudinary.com/dkympkwdz/image/upload/c_scale,h_384,w_601/${article.media[0].url}`} alt=""/><span className="hover"></span></Link>
-            </div>
-          </div>
-
-          <div className="content">
-            <div className="info">
-              <div className="date">{article.date}</div>
-              <div className="stats">
-                <div className="views">{article.views}</div>
-                <div className="comments">7</div>
-              </div>
-            </div>
-
-            <div className="title">
-              <Link to={`articles/${key}`}>{article.title}</Link>
-            </div>
-
-            <div className="line_1"></div>
-          </div>
-        </article>
-      );
-    });
-
-    return (
-      <div className="main_content">
-        <div className="block_posts type_3">
-
-          {articles}
-
-        </div>
-
-        <div className="separator_2"></div>
-
-        <div className="block_pager_1">
-          <ul>
-            <li className="current"><a href="#">1</a></li>
-            <li><a href="#">2</a></li>
-            <li><a href="#">3</a></li>
-            <li className="skip">...</li>
-            <li><a href="#">7</a></li>
-            <li><a href="#" className="next">Next</a></li>
-          </ul>
-
-          <div className="info">Page 1 of 7</div>
-          <a href="sandwich1.herokuapp.com/#/#disqus_thread">Test Count</a>
-
-          <div className="clearboth"></div>
-        </div>
-
-        <div id="disqus_thread"></div>
-
-      </div>
-    );
-  }
-
-  renderPopular(){
-
   }
 
   render(){
@@ -322,7 +212,7 @@ class Splash extends React.Component{
 
       		<div id="content" className="sidebar_right">
       			<div className="inner">
-              <div className="block_slider_type_2 general_not_loaded">
+      				<div className="block_slider_type_2 general_not_loaded">
       					<div id="slider" className="slider flexslider">
       						<ul className="slides">
       							<li>
@@ -352,14 +242,251 @@ class Splash extends React.Component{
       					<h2>YOUR EXCLUSIVE TICKET TO TASTE</h2>
       				</div>
 
-      				{this.renderFeatured()}
+      				<div className="block_posts type_2">
+      					<article className="post_type_4">
+      						<div className="feature">
+      							<div className="image">
+      								<a href="blog_post.html"><img src="http://res.cloudinary.com/dkympkwdz/image/upload/c_scale,h_384,w_601/v1489010716/example_pqoqsl.jpg" alt=""/><span className="hover"></span></a>
+      							</div>
+      						</div>
+
+      						<div className="content">
+      							<div className="info">
+      								<div className="date">March 27, 2017</div>
+      								<div className="stats">
+      									<div className="views">15</div>
+      									<div className="comments">7</div>
+      								</div>
+      							</div>
+
+      							<div className="title">
+      								<a href="blog_post.html">Sed ut perspiciatis unde omnis iste natus sit volup.</a>
+      							</div>
+      						</div>
+      					</article>
+
+      					<article className="post_type_4">
+      						<div className="feature">
+      							<div className="image">
+      								<a href="blog_post.html"><img src="http://res.cloudinary.com/dkympkwdz/image/upload/c_scale,h_384,w_601/v1489010716/example_pqoqsl.jpg" alt=""/><span className="hover"></span></a>
+      							</div>
+      						</div>
+
+      						<div className="content">
+      							<div className="info">
+      								<div className="date">March 27, 2017</div>
+      								<div className="stats">
+      									<div className="views">15</div>
+      									<div className="comments">7</div>
+      								</div>
+      							</div>
+
+      							<div className="title">
+      								<a href="blog_post.html">Red ut perspiciatis unde omnis iste.</a>
+      							</div>
+      						</div>
+      					</article>
+
+      					<article className="post_type_4">
+      						<div className="feature">
+      							<div className="image">
+      								<a href="blog_post.html"><img src="http://res.cloudinary.com/dkympkwdz/image/upload/c_scale,h_384,w_601/v1489010716/example_pqoqsl.jpg" alt=""/><span className="hover"></span></a>
+      							</div>
+      						</div>
+
+      						<div className="content">
+      							<div className="info">
+      								<div className="date">March 27, 2017</div>
+      								<div className="stats">
+      									<div className="views">15</div>
+      									<div className="comments">7</div>
+      								</div>
+      							</div>
+
+      							<div className="title">
+      								<a href="blog_post.html">Totam rem aperiam, eaque ipsa quae ab illo inventore.</a>
+      							</div>
+      						</div>
+      					</article>
+
+      					<div className="clearboth"></div>
+      					<div className="line_1"></div>
+      				</div>
 
       				<div className="block_general_title_1 w_margin_1">
       					<h1>LATEST ARTICLES</h1>
       					<h2>OUR LATEST BITES</h2>
       				</div>
 
-      				{this.renderArticles()}
+      				<div className="main_content">
+      					<div className="block_posts type_3">
+      						<article className="post_type_4">
+      							<div className="feature">
+      								<div className="image">
+      									<a href="blog_post.html"><img src="http://res.cloudinary.com/dkympkwdz/image/upload/c_scale,h_384,w_601/v1489010716/example_pqoqsl.jpg" alt=""/><span className="hover"></span></a>
+      								</div>
+      							</div>
+
+      							<div className="content">
+      								<div className="info">
+      									<div className="date">March 27, 2017</div>
+      									<div className="stats">
+      										<div className="views">15</div>
+      										<div className="comments">7</div>
+      									</div>
+      								</div>
+
+      								<div className="title">
+      									<a href="blog_post.html">Quae ab illo inventore veritatis et quasi architecto beatae.</a>
+      								</div>
+
+      								<div className="line_1"></div>
+      							</div>
+      						</article>
+
+      						<article className="post_type_4">
+      							<div className="feature">
+      								<div className="image">
+      									<a href="blog_post.html"><img src="http://res.cloudinary.com/dkympkwdz/image/upload/c_scale,h_384,w_601/v1489010716/example_pqoqsl.jpg" alt=""/><span className="hover"></span></a>
+      								</div>
+      							</div>
+
+      							<div className="content">
+      								<div className="info">
+      									<div className="date">March 27, 2017</div>
+      									<div className="stats">
+      										<div className="views">15</div>
+      										<div className="comments">7</div>
+      									</div>
+      								</div>
+
+      								<div className="title">
+      									<a href="blog_post.html">Totam rem aperiam, eaque ipsa quae ab illo inventore verit.</a>
+      								</div>
+
+      								<div className="line_1"></div>
+      							</div>
+      						</article>
+
+      						<article className="post_type_4">
+      							<div className="feature">
+      								<div className="image">
+      									<a href="blog_post.html"><img src="http://res.cloudinary.com/dkympkwdz/image/upload/c_scale,h_384,w_601/v1489010716/example_pqoqsl.jpg" alt=""/><span className="hover"></span></a>
+      								</div>
+      							</div>
+
+      							<div className="content">
+      								<div className="info">
+      									<div className="date">March 27, 2017</div>
+      									<div className="stats">
+      										<div className="views">15</div>
+      										<div className="comments">7</div>
+      									</div>
+      								</div>
+
+      								<div className="title">
+      									<a href="blog_post.html">Rem aperiam, eaque ipsa quae ab illo inven.</a>
+      								</div>
+
+      								<div className="line_1"></div>
+      							</div>
+      						</article>
+
+      						<article className="post_type_4">
+      							<div className="feature">
+      								<div className="image">
+      									<a href="blog_post.html"><img src="http://res.cloudinary.com/dkympkwdz/image/upload/c_scale,h_384,w_601/v1489010716/example_pqoqsl.jpg" alt=""/><span className="hover"></span></a>
+      								</div>
+      							</div>
+
+      							<div className="content">
+      								<div className="info">
+      									<div className="date">March 27, 2017</div>
+      									<div className="stats">
+      										<div className="views">15</div>
+      										<div className="comments">7</div>
+      									</div>
+      								</div>
+
+      								<div className="title">
+      									<a href="blog_post.html">Red ut perspiciatis unde omnis iste.</a>
+      								</div>
+
+      								<div className="line_1"></div>
+      							</div>
+      						</article>
+
+      						<article className="post_type_4">
+      							<div className="feature">
+      								<div className="image">
+      									<a href="blog_post.html"><img src="http://res.cloudinary.com/dkympkwdz/image/upload/c_scale,h_384,w_601/v1489010716/example_pqoqsl.jpg" alt=""/><span className="hover"></span></a>
+      								</div>
+      							</div>
+
+      							<div className="content">
+      								<div className="info">
+      									<div className="date">March 27, 2017</div>
+      									<div className="stats">
+      										<div className="views">15</div>
+      										<div className="comments">7</div>
+      									</div>
+      								</div>
+
+      								<div className="title">
+      									<a href="blog_post.html">Qumquam eius modi tempora.</a>
+      								</div>
+
+      								<div className="line_1"></div>
+      							</div>
+      						</article>
+
+      						<article className="post_type_4">
+      							<div className="feature">
+      								<div className="image">
+      									<a href="blog_post.html"><img src="http://res.cloudinary.com/dkympkwdz/image/upload/c_scale,h_384,w_601/v1489010716/example_pqoqsl.jpg" alt=""/><span className="hover"></span></a>
+      								</div>
+      							</div>
+
+      							<div className="content">
+      								<div className="info">
+      									<div className="date">March 27, 2017</div>
+      									<div className="stats">
+      										<div className="views">15</div>
+      										<div className="comments">7</div>
+      									</div>
+      								</div>
+
+      								<div className="title">
+      									<a href="blog_post.html">Qumquam eius modi tempora.</a>
+      								</div>
+
+      								<div className="line_1"></div>
+      							</div>
+      						</article>
+
+      					</div>
+
+      					<div className="separator_2"></div>
+
+      					<div className="block_pager_1">
+      						<ul>
+      							<li className="current"><a href="#">1</a></li>
+      							<li><a href="#">2</a></li>
+      							<li><a href="#">3</a></li>
+      							<li className="skip">...</li>
+      							<li><a href="#">7</a></li>
+      							<li><a href="#" className="next">Next</a></li>
+      						</ul>
+
+      						<div className="info">Page 1 of 7</div>
+                  <a href="sandwich1.herokuapp.com/#/#disqus_thread">Test Count</a>
+
+      						<div className="clearboth"></div>
+      					</div>
+
+                <div id="disqus_thread"></div>
+
+      				</div>
 
       				<div className="sidebar">
       					<aside>
