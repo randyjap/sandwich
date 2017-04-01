@@ -58,7 +58,8 @@ end
     category: ["LA", "San Francisco", "Taipei"].sample,
     featured: true,
     lat: Faker::Address.latitude,
-    lng: Faker::Address.longitude
+    lng: Faker::Address.longitude,
+    views: rand(50..100)
   )
 end
 

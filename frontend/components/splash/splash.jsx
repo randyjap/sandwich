@@ -54,6 +54,45 @@ class Splash extends React.Component{
     })();
   }
 
+  renderFeatured(){
+    let featured = this.state.featured;
+    const articles = Object.keys(featured).map(key => {
+      let article = featured[key];
+      return (
+        <article key={key} className="post_type_4">
+          <div className="feature">
+            <div className="image">
+              <a href={`articles/${key}`}><img src={`http://res.cloudinary.com/dkympkwdz/image/upload/c_scale,h_384,w_601/${article.media[0].url}`} alt=""/><span className="hover"></span></a>
+            </div>
+          </div>
+
+          <div className="content">
+            <div className="info">
+              <div className="date">{article.date}</div>
+              <div className="stats">
+                <div className="views">{article.views}</div>
+                <div className="comments">7</div>
+              </div>
+            </div>
+
+            <div className="title">
+              <a href={`articles/${key}`}>{article.title}</a>
+            </div>
+          </div>
+        </article>
+      );
+    });
+
+    return (
+      <div className="block_posts type_2">
+        {articles}
+        <div className="clearboth"></div>
+        <div className="line_1"></div>
+      </div>
+    );
+  }
+
+
   render(){
     return (
       <div className="sticky_footer body">
@@ -233,76 +272,7 @@ class Splash extends React.Component{
       					<h2>YOUR EXCLUSIVE TICKET TO TASTE</h2>
       				</div>
 
-      				<div className="block_posts type_2">
-      					<article className="post_type_4">
-      						<div className="feature">
-      							<div className="image">
-      								<a href="blog_post.html"><img src="http://res.cloudinary.com/dkympkwdz/image/upload/c_scale,h_384,w_601/v1489010716/example_pqoqsl.jpg" alt=""/><span className="hover"></span></a>
-      							</div>
-      						</div>
-
-      						<div className="content">
-      							<div className="info">
-      								<div className="date">March 27, 2017</div>
-      								<div className="stats">
-      									<div className="views">15</div>
-      									<div className="comments">7</div>
-      								</div>
-      							</div>
-
-      							<div className="title">
-      								<a href="blog_post.html">Sed ut perspiciatis unde omnis iste natus sit volup.</a>
-      							</div>
-      						</div>
-      					</article>
-
-      					<article className="post_type_4">
-      						<div className="feature">
-      							<div className="image">
-      								<a href="blog_post.html"><img src="http://res.cloudinary.com/dkympkwdz/image/upload/c_scale,h_384,w_601/v1489010716/example_pqoqsl.jpg" alt=""/><span className="hover"></span></a>
-      							</div>
-      						</div>
-
-      						<div className="content">
-      							<div className="info">
-      								<div className="date">March 27, 2017</div>
-      								<div className="stats">
-      									<div className="views">15</div>
-      									<div className="comments">7</div>
-      								</div>
-      							</div>
-
-      							<div className="title">
-      								<a href="blog_post.html">Red ut perspiciatis unde omnis iste.</a>
-      							</div>
-      						</div>
-      					</article>
-
-      					<article className="post_type_4">
-      						<div className="feature">
-      							<div className="image">
-      								<a href="blog_post.html"><img src="http://res.cloudinary.com/dkympkwdz/image/upload/c_scale,h_384,w_601/v1489010716/example_pqoqsl.jpg" alt=""/><span className="hover"></span></a>
-      							</div>
-      						</div>
-
-      						<div className="content">
-      							<div className="info">
-      								<div className="date">March 27, 2017</div>
-      								<div className="stats">
-      									<div className="views">15</div>
-      									<div className="comments">7</div>
-      								</div>
-      							</div>
-
-      							<div className="title">
-      								<a href="blog_post.html">Totam rem aperiam, eaque ipsa quae ab illo inventore.</a>
-      							</div>
-      						</div>
-      					</article>
-
-      					<div className="clearboth"></div>
-      					<div className="line_1"></div>
-      				</div>
+      				{this.renderFeatured()}
 
       				<div className="block_general_title_1 w_margin_1">
       					<h1>LATEST ARTICLES</h1>
