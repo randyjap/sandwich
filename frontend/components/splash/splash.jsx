@@ -4,18 +4,6 @@ import Slider from 'react-slick';
 import {getArticles} from './../../util/article_api_util';
 import Instafeed from 'instafeed.js';
 
-function slider_1() {
-  jQuery(function() {
-    init_post_slider_1('#post_slider_1');
-  });
-}
-
-function slider_2() {
-  jQuery(function() {
-    init_slider_2('#slider');
-  });
-}
-
 var userFeed = new Instafeed({
     get: 'user',
     userId: '1570804557',
@@ -31,7 +19,11 @@ class Splash extends React.Component{
   constructor(props){
     super(props);
     this.redirect = this.redirect.bind(this);
-    this.state = { articles: {} };
+    this.state = {
+      featured: {},
+      popular: {} ,
+      articles: {}
+    };
   }
 
   redirect(route){
@@ -39,11 +31,13 @@ class Splash extends React.Component{
   }
 
   componentDidMount(){
-    let that = this;
-    getArticles().then(data => that.setState({articles: data}));
+    getArticles({category: "featured"}).then(articles => this.setState({featured: articles}));
+    // getArticles("popular")
+    //   .then(popular => this.setState({popular}));
+    // getArticles("articles")
+    //   .then(articles => this.setState({articles}));
+    console.log(this.state);
 
-    slider_1();
-    slider_2();
     userFeed.run();
 
     /**

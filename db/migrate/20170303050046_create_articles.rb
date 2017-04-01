@@ -7,6 +7,7 @@ class CreateArticles < ActiveRecord::Migration[5.0]
       t.date :date, null: false
       t.integer :views, default: 0
       t.string :category, null: false
+      t.boolean :featured, default: false
       t.float :lat, null: false
       t.float :lng, null: false
       t.timestamps
