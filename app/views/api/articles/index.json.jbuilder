@@ -1,11 +1,18 @@
 @articles.each do |article|
   json.set! article.id do
-    author = article.author.username
-    json.set! :author, author
     json.extract! article,
-                  :title,
-                  :article,
-                  :thumbnail_url,
-                  :image_url
+    :title,
+    :article,
+    :date,
+    :views,
+    :category,
+    :featured,
+    :lat,
+    :lng
+    json.set! :author do
+      json.extract! article.author,
+      :first_name,
+      :last_name
+    end
   end
 end
