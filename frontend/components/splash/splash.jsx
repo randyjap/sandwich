@@ -170,7 +170,31 @@ class Splash extends React.Component{
   }
 
   renderPopular(){
+    let articles = this.state.popular;
+    articles = Object.keys(articles).map(key => {
+      let article = articles[key];
+      return (
+        <article>
+          <div className="image"><Link to={`articles/${key}`}><img src={`http://res.cloudinary.com/dkympkwdz/image/upload/c_scale,h_66,w_86/${article.media[0].url}`} alt=""/></Link></div>
 
+          <div className="content">
+            <div className="title">
+              <Link to={`articles/${key}`}>{article.title}</Link>
+            </div>
+
+            <div className="info">
+              <div className="date">{article.date}</div>
+            </div>
+          </div>
+        </article>
+      );
+    });
+
+    return (
+      <div className="block_sidebar_popular_posts">
+        {articles}
+      </div>
+    );
   }
 
   render(){
@@ -405,49 +429,7 @@ class Splash extends React.Component{
       					<aside>
       						<div className="sidebar_title_1">Popular posts</div>
 
-      						<div className="block_sidebar_popular_posts">
-      							<article>
-      								<div className="image"><a href="#"><img src="http://res.cloudinary.com/dkympkwdz/image/upload/c_scale,h_66,w_86/v1489010716/example_pqoqsl.jpg" alt=""/></a></div>
-
-      								<div className="content">
-      									<div className="title">
-      										<a href="blog_post.html">Quae ab illo inventore veritatis et quasi.</a>
-      									</div>
-
-      									<div className="info">
-      										<div className="date">March 27, 2017</div>
-      									</div>
-      								</div>
-      							</article>
-
-      							<article>
-      								<div className="image"><a href="#"><img src="http://res.cloudinary.com/dkympkwdz/image/upload/c_scale,h_66,w_86/v1489010716/example_pqoqsl.jpg" alt=""/></a></div>
-
-      								<div className="content">
-      									<div className="title">
-      										<a href="blog_post.html">Nemo enim ipsam voluptatem quia voluptas.</a>
-      									</div>
-
-      									<div className="info">
-      										<div className="date">March 27, 2017</div>
-      									</div>
-      								</div>
-      							</article>
-
-      							<article>
-      								<div className="image"><a href="#"><img src="http://res.cloudinary.com/dkympkwdz/image/upload/c_scale,h_66,w_86/v1489010716/example_pqoqsl.jpg" alt=""/></a></div>
-
-      								<div className="content">
-      									<div className="title">
-      										<a href="blog_post.html">Sit aspernatur aut odit aut fugit, sed quia.</a>
-      									</div>
-
-      									<div className="info">
-      										<div className="date">March 27, 2017</div>
-      									</div>
-      								</div>
-      							</article>
-      						</div>
+      						{this.renderPopular()}
       					</aside>
 
       				</div>
