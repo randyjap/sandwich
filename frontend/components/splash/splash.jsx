@@ -31,11 +31,7 @@ class Splash extends React.Component{
   }
 
   componentDidMount(){
-    getArticles({category: "featured"}).then(articles => this.setState({featured: articles}));
-    // getArticles("popular")
-    //   .then(popular => this.setState({popular}));
-    // getArticles("articles")
-    //   .then(articles => this.setState({articles}));
+    getArticles({featured: true}).then(articles => this.setState({featured: articles}));
     console.log(this.state);
 
     userFeed.run();

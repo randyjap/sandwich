@@ -1,8 +1,14 @@
 class Api::ArticlesController < ApplicationController
   def index
-    debugger
     category = params[:category]
-    @articles = Article.all
+    featured = params[:featured]
+    popular = params[:popular]
+    if popular
+      @articles = Article.popular
+    else
+      @articles = Article.where("category = :category and featured = :featured",
+                                category: category, featured: featured)
+    end
   end
 
   def show
