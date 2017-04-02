@@ -31,15 +31,24 @@ class Splash extends React.Component{
   constructor(props){
     super(props);
     this.redirect = this.redirect.bind(this);
+    this.nextPage = this.nextPage.bind(this);
     this.state = {
       featured: {},
-      popular: {} ,
-      articles: {}
+      popular: {},
+      articles: {},
+      offset: 1
     };
   }
 
   redirect(route){
     this.props.router.replace(route);
+  }
+
+  nextPage(){
+    let count = Math.ceil(Object.keys(this.state.articles).length / 8);
+    if (this.state.offset < count) {
+      this.setState({offset: this.state.offset + 1});
+    }
   }
 
   componentDidMount(){
@@ -70,6 +79,7 @@ class Splash extends React.Component{
 
   renderFeatured(){
     let articles = this.state.featured;
+    let index = 0;
     articles = Object.keys(articles).map(key => {
       let article = articles[key];
       return (
@@ -108,57 +118,72 @@ class Splash extends React.Component{
 
   renderArticles(){
     let articles = this.state.articles;
+    let index = 0;
     articles = Object.keys(articles).map(key => {
       let article = articles[key];
-      return (
-        <article key={key} className="post_type_4">
-          <div className="feature">
-            <div className="image">
-              <Link to={`articles/${key}`}><img src={`http://res.cloudinary.com/dkympkwdz/image/upload/c_scale,h_384,w_601/${article.media[0].url}`} alt=""/><span className="hover"></span></Link>
-            </div>
-          </div>
-
-          <div className="content">
-            <div className="info">
-              <div className="date">{article.date}</div>
-              <div className="stats">
-                <div className="views">{article.views}</div>
-                <div className="comments">7</div>
+      index++;
+      if (index < this.state.offset * 8 && index > this.state.offset * 8 - 8) {
+        return (
+          <article key={key} className="post_type_4">
+            <div className="feature">
+              <div className="image">
+                <Link to={`articles/${key}`}><img src={`http://res.cloudinary.com/dkympkwdz/image/upload/c_scale,h_384,w_601/${article.media[0].url}`} alt=""/><span className="hover"></span></Link>
               </div>
             </div>
 
-            <div className="title">
-              <Link to={`articles/${key}`}>{article.title}</Link>
-            </div>
+            <div className="content">
+              <div className="info">
+                <div className="date">{article.date}</div>
+                <div className="stats">
+                  <div className="views">{article.views}</div>
+                  <div className="comments">7</div>
+                </div>
+              </div>
 
-            <div className="line_1"></div>
-          </div>
-        </article>
-      );
+              <div className="title">
+                <Link to={`articles/${key}`}>{article.title}</Link>
+              </div>
+
+              <div className="line_1"></div>
+            </div>
+          </article>
+        );
+      }
     });
+
+    let pageCount = Math.ceil(Object.keys(this.state.articles).length / 8);
+    let paginations = [];
+    for (let i = 1; i <= pageCount; i++) {
+      paginations.push(i);
+    }
+    paginations = paginations.map(key => {
+        return (
+          <li key={key}
+              className={this.state.offset === key ? "current" : ""}
+              onClick={() => this.setState({offset: key})}>
+            <Link to="" >{key}</Link>
+          </li>
+        );
+      }
+    );
 
     return (
       <div className="main_content">
         <div className="block_posts type_3">
-
           {articles}
-
         </div>
 
         <div className="separator_2"></div>
 
         <div className="block_pager_1">
           <ul>
-            <li className="current"><a href="#">1</a></li>
-            <li><a href="#">2</a></li>
-            <li><a href="#">3</a></li>
-            <li className="skip">...</li>
-            <li><a href="#">7</a></li>
-            <li><a href="#" className="next">Next</a></li>
+            {paginations}
+            <li><Link to=""
+              className="next"
+              onClick={this.nextPage}>Next</Link></li>
           </ul>
 
-          <div className="info">Page 1 of 7</div>
-          <a href="sandwich1.herokuapp.com/#/#disqus_thread">Test Count</a>
+          <div className="info">Page 1 of {pageCount}</div>
 
           <div className="clearboth"></div>
         </div>
@@ -174,7 +199,7 @@ class Splash extends React.Component{
     articles = Object.keys(articles).map(key => {
       let article = articles[key];
       return (
-        <article>
+        <article key={key}>
           <div className="image"><Link to={`articles/${key}`}><img src={`http://res.cloudinary.com/dkympkwdz/image/upload/c_scale,h_66,w_86/${article.media[0].url}`} alt=""/></Link></div>
 
           <div className="content">
