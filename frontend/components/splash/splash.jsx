@@ -122,7 +122,7 @@ class Splash extends React.Component{
     articles = Object.keys(articles).map(key => {
       let article = articles[key];
       index++;
-      if (index < this.state.offset * 8 && index > this.state.offset * 8 - 8) {
+      if (index <= this.state.offset * 8 && index >= this.state.offset * 8 - 7) {
         return (
           <article key={key} className="post_type_4">
             <div className="feature">
