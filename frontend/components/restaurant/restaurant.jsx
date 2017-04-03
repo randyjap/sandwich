@@ -21,27 +21,288 @@ class Restaurant extends React.Component{
   }
 
   render(){
+    let center = {lat: this.state.article.lat, lng: this.state.article.lng};
     RawHtml.addTag("mycooltag");
     return (
-      <div className="main">
-        <div className="main-header">
-          <ul className="main-header-nav">
-            <li><a href="#">Taipei</a></li>
-            <li><a href="#">Downtown Los Angeles</a></li>
-          </ul>
-        </div>
-        <div className="">
-          <MapContainer />
-          <div className="">
-            <p className="">{this.state.article.title}</p>
-            <div className="">
-              <RawHtml.mycooltag>{this.state.article.article}</RawHtml.mycooltag>
-            </div>
-          </div>
-        </div>
-        <footer className="footer">
+      <div className="sticky_footer body">
+      	<div className="wrapper">
+      		<header>
+      			<div id="header">
+      				<section className="top">
+      					<div className="inner">
+      						<div className="block_top_menu">
+      							<nav>
+      							</nav>
+      						</div>
 
-        </footer>
+      						<div className="block_search">
+      							<input type="text" className="w_focus_mark"/>
+      						</div>
+
+      						<div className="block_top_social">
+      							<ul className="general_social_1">
+      								<li><a target="_blank" href="https://twitter.com/tasteterminal" className="social_1">Twitter</a></li>
+      								<li><a target="_blank" href="https://www.facebook.com/tasteterminal/" className="social_2">Facebook</a></li>
+      								<li><a target="_blank" href="https://vimeo.com/tasteterminal/" className="social_3">Vimeo</a></li>
+      								<li><a target="_blank" href="https://www.instagram.com/secretstan/" className="social_5">Instagram</a></li>
+      							</ul>
+      						</div>
+
+      						<div className="clearboth"></div>
+      					</div>
+      				</section>
+
+      				<section className="middle">
+      					<div className="inner">
+
+      						<h1 className="logo">
+                    <img src="http://res.cloudinary.com/dkympkwdz/image/upload/v1490186761/ad_banner_hhhwse.png"/>
+                    Taste Terminal
+                  </h1>
+      					</div>
+      				</section>
+
+      				<section className="bottom">
+      					<div className="inner">
+      						<div className="block_secondary_menu">
+      							<nav>
+      								<ul>
+      									<li data-content="los-angeles"><a href="#">DOWNTOWN LA</a><div className="tail"></div></li>
+      									<li data-content="taipei"><a href="#">TAIPEI</a><div className="tail"></div></li>
+      									<li data-content="sf"><a href="#">SAN FRANCISCO</a><div className="tail"></div></li>
+      								</ul>
+      							</nav>
+
+      							<div className="dropdown" data-menu="los-angeles">
+      								<div className="image_type_1">
+      									<div className="image">
+      										<a href="#"><img src="http://res.cloudinary.com/dkympkwdz/image/upload/c_scale,h_496,w_671/v1489010716/example_pqoqsl.jpg" alt=""/><span className="hover"></span></a>
+      									</div>
+
+      									<div className="title"><a href="#">Sed ut perspiciatis unde omnis iste.</a></div>
+      								</div>
+
+      								<div className="image_type_1">
+      									<div className="image">
+      										<a href="#"><img src="http://res.cloudinary.com/dkympkwdz/image/upload/c_scale,h_496,w_671/v1489010716/example_pqoqsl.jpg" alt=""/><span className="hover"></span></a>
+      									</div>
+
+      									<div className="title"><a href="#">Unde omnis iste natus sit volup.</a></div>
+      								</div>
+
+      								<div className="menu_type_2">
+      									<div className="title">Featured posts</div>
+
+      									<ul>
+      										<li><a href="#">Sed ut perspiciatis unde omnis iste natus sit volup.</a></li>
+      										<li><a href="#">Omnis iste natus sit volup.</a></li>
+      										<li><a href="#">Sed ut perspiciatis unde omnis iste natus sit volup.</a></li>
+      										<li><a href="#">Sed ut perspiciatis unde omnis iste natus sit volup.</a></li>
+      									</ul>
+      								</div>
+
+
+      							</div>
+
+      							<div className="dropdown" data-menu="taipei">
+      								<div className="image_type_1">
+      									<div className="image">
+      										<a href="#"><img src="http://res.cloudinary.com/dkympkwdz/image/upload/c_scale,h_496,w_671/v1489010716/example_pqoqsl.jpg" alt=""/><span className="hover"></span></a>
+      									</div>
+
+      									<div className="title"><a href="#">Sed ut perspiciatis unde omnis iste.</a></div>
+      								</div>
+
+      								<div className="image_type_1">
+      									<div className="image">
+      										<a href="#"><img src="http://res.cloudinary.com/dkympkwdz/image/upload/c_scale,h_496,w_671/v1489010716/example_pqoqsl.jpg" alt=""/><span className="hover"></span></a>
+      									</div>
+
+      									<div className="title"><a href="#">Unde omnis iste natus sit volup.</a></div>
+      								</div>
+
+      								<div className="menu_type_2">
+      									<div className="title">Featured posts</div>
+
+      									<ul>
+      										<li><a href="#">Sed ut perspiciatis unde omnis iste natus sit volup.</a></li>
+      										<li><a href="#">Omnis iste natus sit volup.</a></li>
+      										<li><a href="#">Sed ut perspiciatis unde omnis iste natus sit volup.</a></li>
+      										<li><a href="#">Sed ut perspiciatis unde omnis iste natus sit volup.</a></li>
+      									</ul>
+      								</div>
+
+      							</div>
+
+      							<div className="dropdown" data-menu="sf">
+      								<div className="image_type_1">
+      									<div className="image">
+      										<a href="#"><img src="http://res.cloudinary.com/dkympkwdz/image/upload/c_scale,h_496,w_671/v1489010716/example_pqoqsl.jpg" alt=""/><span className="hover"></span></a>
+      									</div>
+
+      									<div className="title"><a href="#">Sed ut perspiciatis unde omnis iste.</a></div>
+      								</div>
+
+      								<div className="image_type_1">
+      									<div className="image">
+      										<a href="#"><img src="http://res.cloudinary.com/dkympkwdz/image/upload/c_scale,h_496,w_671/v1489010716/example_pqoqsl.jpg" alt=""/><span className="hover"></span></a>
+      									</div>
+
+      									<div className="title"><a href="#">Unde omnis iste natus sit volup.</a></div>
+      								</div>
+
+      								<div className="menu_type_2">
+      									<div className="title">Featured posts</div>
+
+      									<ul>
+      										<li><a href="#">Sed ut perspiciatis unde omnis iste natus sit volup.</a></li>
+      										<li><a href="#">Omnis iste natus sit volup.</a></li>
+      										<li><a href="#">Sed ut perspiciatis unde omnis iste natus sit volup.</a></li>
+      										<li><a href="#">Sed ut perspiciatis unde omnis iste natus sit volup.</a></li>
+      									</ul>
+      								</div>
+
+      							</div>
+      						</div>
+      					</div>
+      				</section>
+      			</div>
+      		</header>
+
+          <div id="content" className="">
+            <div className="inner">
+      				<div className="block_general_title_1">
+      					<h1>{this.state.article.title}</h1>
+      					<h2>{this.state.article.category}</h2>
+      				</div>
+
+      				<div className="block_content">
+
+                <MapContainer center={center}/>
+                <div className="">
+                  <div className="">
+                    <RawHtml.mycooltag>{this.state.article.article}</RawHtml.mycooltag>
+                  </div>
+                </div>
+
+      					<div className="line_1"></div>
+      				</div>
+
+      				<div className="block_info_1">
+      					<div className="tags">
+      						<div className="title"><span>Tags Cloud</span></div>
+
+      						<ul>
+      							<li><a href="#">Peoples</a></li>
+      							<li><a href="#">Photography</a></li>
+      							<li><a href="#">Clear</a></li>
+      						</ul>
+      					</div>
+
+      					<div className="rating">
+      						<div className="title"><span>Rating</span></div>
+
+      						<div className="text">
+      							<div className="num">1568</div>
+      							<div className="type">views</div>
+      						</div>
+
+      						<div className="text">
+      							<div className="num">26</div>
+      							<div className="type">Comments</div>
+      						</div>
+
+      						<div className="line"></div>
+      					</div>
+
+      					<div className="social">
+      						<div className="title"><span>Recommend to friends</span></div>
+
+      						<ul className="general_social_3">
+      							<li><a href="#" className="social_1">Twitter</a></li>
+      							<li><a href="#" className="social_2">Facebook</a></li>
+      							<li><a href="#" className="social_3">Pinterest</a></li>
+      							<li><a href="#" className="social_4">Google Plus</a></li>
+      							<li><a href="#" className="social_5">Instagram</a></li>
+      						</ul>
+      					</div>
+
+      					<div className="subscribe">
+      						<div className="title"><span>SUBSCRIBE</span></div>
+
+      						<div className="content">
+      							<a href="#" className="lnk_subscribe">Subscribe to comments<span className="icon email"></span></a>
+      						</div>
+      					</div>
+
+      				</div>
+
+      			</div>
+      		</div>
+
+      		<footer>
+      			<div id="footer">
+      				<section className="top">
+      					<div className="inner">
+      						<div className="block_footer_widgets">
+      							<div className="column">
+      								<div className="block_footer_categories">
+      									<h3>Locations</h3>
+
+      									<ul>
+      										<li><a href="#">DOWNTOWN LA</a></li>
+      										<li><a href="#">TAIPEI</a></li>
+      										<li><a href="#">SAN FRANCISCO</a></li>
+      									</ul>
+      								</div>
+      							</div>
+
+      							<div className="column">
+
+      								<div className="block_footer_twitter">
+      									<h3>Twitter</h3>
+
+      									<div id="tweets">
+                          <a className="twitter-timeline" data-width="400" data-height="200" data-theme="dark" href="https://twitter.com/TasteTerminal">Tweets by TasteTerminal</a>
+      									</div>
+
+      								</div>
+      							</div>
+
+      							<div className="column">
+      								<div className="block_footer_pics">
+      									<h3>Instagram</h3>
+
+      									<ul id="instafeed">
+      									</ul>
+      								</div>
+      							</div>
+      						</div>
+      					</div>
+      				</section>
+
+      				<section className="middle">
+      					<div className="inner">
+      						<div className="block_bottom_menu">
+      							<nav>
+      								<ul>
+      									<li><a href="#">CONTACT</a></li>
+      									<li><a href="#">PRIVACY POLICY</a></li>
+      									<li><a href="#">ADVERTISE</a></li>
+      								</ul>
+      							</nav>
+      						</div>
+      					</div>
+      				</section>
+
+      				<section className="bottom">
+      					<div className="inner">
+      						<div className="block_copyrights"><p>&copy; Copyright {new Date().getFullYear()} by Taste Terminal. All Rights Reserved.</p></div>
+      					</div>
+      				</section>
+      			</div>
+      		</footer>
+      	</div>
       </div>
     );
   }

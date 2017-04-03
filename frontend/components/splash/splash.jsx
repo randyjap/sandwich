@@ -86,7 +86,7 @@ class Splash extends React.Component{
         <article key={key} className="post_type_4">
           <div className="feature">
             <div className="image">
-              <Link to={`articles/${key}`}><img src={`http://res.cloudinary.com/dkympkwdz/image/upload/c_scale,h_384,w_601/${article.media[0].url}`} alt=""/><span className="hover"></span></Link>
+              <Link to={`restaurants/${key}`}><img src={`http://res.cloudinary.com/dkympkwdz/image/upload/c_scale,h_384,w_601/${article.media[0].url}`} alt=""/><span className="hover"></span></Link>
             </div>
           </div>
 
@@ -100,7 +100,7 @@ class Splash extends React.Component{
             </div>
 
             <div className="title">
-              <Link to={`articles/${key}`}>{article.title}</Link>
+              <Link to={`restaurants/${key}`}>{article.title}</Link>
             </div>
           </div>
         </article>
@@ -127,7 +127,7 @@ class Splash extends React.Component{
           <article key={key} className="post_type_4">
             <div className="feature">
               <div className="image">
-                <Link to={`articles/${key}`}><img src={`http://res.cloudinary.com/dkympkwdz/image/upload/c_scale,h_384,w_601/${article.media[0].url}`} alt=""/><span className="hover"></span></Link>
+                <Link to={`restaurants/${key}`}><img src={`http://res.cloudinary.com/dkympkwdz/image/upload/c_scale,h_384,w_601/${article.media[0].url}`} alt=""/><span className="hover"></span></Link>
               </div>
             </div>
 
@@ -141,7 +141,7 @@ class Splash extends React.Component{
               </div>
 
               <div className="title">
-                <Link to={`articles/${key}`}>{article.title}</Link>
+                <Link to={`restaurants/${key}`}>{article.title}</Link>
               </div>
 
               <div className="line_1"></div>
@@ -200,11 +200,11 @@ class Splash extends React.Component{
       let article = articles[key];
       return (
         <article key={key}>
-          <div className="image"><Link to={`articles/${key}`}><img src={`http://res.cloudinary.com/dkympkwdz/image/upload/c_scale,h_66,w_86/${article.media[0].url}`} alt=""/></Link></div>
+          <div className="image"><Link to={`restaurants/${key}`}><img src={`http://res.cloudinary.com/dkympkwdz/image/upload/c_scale,h_66,w_86/${article.media[0].url}`} alt=""/></Link></div>
 
           <div className="content">
             <div className="title">
-              <Link to={`articles/${key}`}>{article.title}</Link>
+              <Link to={`restaurants/${key}`}>{article.title}</Link>
             </div>
 
             <div className="info">

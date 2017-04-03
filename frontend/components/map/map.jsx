@@ -49,14 +49,7 @@ let style = [
   }
 ];
 
-let _mapOptions = {
-  center: {lat: 25.049766, lng: 121.5452643}, // San Francisco coords
-  zoom: 13,
-  scrollwheel: false,
-  disableDefaultUI: true,
-  styles: style,
-  zoomControl: true
-};
+
 
 let restaurantDummies = [
   { id: 1, name: "Happy Restaurant", lat: 25.044866, lng: 121.5442743 },
@@ -66,11 +59,22 @@ let restaurantDummies = [
 class Map extends Component {
   constructor(props){
     super(props);
+    this.state = {
+      center: {
+        lat: 39,
+        lng: 39
+      },
+      zoom: 13,
+      scrollwheel: false,
+      disableDefaultUI: true,
+      styles: style,
+      zoomControl: true
+    };
   }
 
   componentDidMount(){
     const map = this.refs.map;
-    this.map = new google.maps.Map(map, _mapOptions);
+    this.map = new google.maps.Map(map, this.state);
     this.MarkerManager = new MarkerManager(this.map, this._handleMarkerClick.bind(this));
     this._registerListeners();
     this.MarkerManager.updateMarkers(restaurantDummies);
@@ -82,6 +86,7 @@ class Map extends Component {
   }
 
   componentWillReceiveProps(nextProps){
+    this.map.setCenter(nextProps.center);
   }
 
   _registerListeners(){
