@@ -8,11 +8,57 @@ class Restaurant extends React.Component{
   constructor(props){
     super(props);
     this.state = { article: {} };
+    this.renderTags = this.renderTags.bind(this);
+    this.loadDisqus = this.loadDisqus.bind(this);
+  }
+
+  renderTags(){
+    let featured = this.state.article.featured;
+    let category = this.state.article.category;
+    if (featured) {
+      featured = (
+        <li><a href="#">Featured</a></li>
+      );
+    }
+
+    if (category) {
+      category = (
+        <li><a href="#">{this.state.article.category}</a></li>
+      );
+    }
+
+    return (
+      <ul>
+        {featured}
+        {category}
+      </ul>
+    );
+
   }
 
   componentDidMount(){
     let that = this;
     getArticle(this.props.params.id).then(data => that.setState({article: data}));
+    this.loadDisqus();
+  }
+
+  loadDisqus(){
+    /**
+    *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+    *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
+    // /*
+    var disqus_config = function () {
+    this.page.url = "http://sandwich1.herokuapp.com/";  // Replace PAGE_URL with your page's canonical URL variable
+    this.page.identifier = `restaurant/${this.state.article.id}`; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+    };
+    // */
+    (function() { // DON'T EDIT BELOW THIS LINE
+      var d = document, s = d.createElement('script');
+      s.src = 'https://http-sandwich1-herokuapp-com.disqus.com/embed.js';
+      s.setAttribute('data-timestamp', +new Date());
+      (d.head || d.body).appendChild(s);
+    })();
+    console.log(this.state.article);
   }
 
   componentWillReceiveProps(){
@@ -186,24 +232,24 @@ class Restaurant extends React.Component{
                 </div>
 
       					<div className="line_1"></div>
+
+                <div id="disqus_thread"></div>
+
       				</div>
 
       				<div className="block_info_1">
       					<div className="tags">
       						<div className="title"><span>Tags Cloud</span></div>
 
-      						<ul>
-      							<li><a href="#">Peoples</a></li>
-      							<li><a href="#">Photography</a></li>
-      							<li><a href="#">Clear</a></li>
-      						</ul>
+                  { this.renderTags() }
+
       					</div>
 
       					<div className="rating">
       						<div className="title"><span>Rating</span></div>
 
       						<div className="text">
-      							<div className="num">1568</div>
+      							<div className="num">{this.state.article.views}</div>
       							<div className="type">views</div>
       						</div>
 
@@ -213,26 +259,6 @@ class Restaurant extends React.Component{
       						</div>
 
       						<div className="line"></div>
-      					</div>
-
-      					<div className="social">
-      						<div className="title"><span>Recommend to friends</span></div>
-
-      						<ul className="general_social_3">
-      							<li><a href="#" className="social_1">Twitter</a></li>
-      							<li><a href="#" className="social_2">Facebook</a></li>
-      							<li><a href="#" className="social_3">Pinterest</a></li>
-      							<li><a href="#" className="social_4">Google Plus</a></li>
-      							<li><a href="#" className="social_5">Instagram</a></li>
-      						</ul>
-      					</div>
-
-      					<div className="subscribe">
-      						<div className="title"><span>SUBSCRIBE</span></div>
-
-      						<div className="content">
-      							<a href="#" className="lnk_subscribe">Subscribe to comments<span className="icon email"></span></a>
-      						</div>
       					</div>
 
       				</div>
