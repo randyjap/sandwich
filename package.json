@@ -36,6 +36,7 @@
     "material-ui": "^0.17.0",
     "react": "^15.4.2",
     "react-addons-css-transition-group": "^15.4.2",
+    "react-disqus-thread": "^0.4.0",
     "react-dom": "^15.4.2",
     "react-modal": "^1.6.5",
     "react-raw-html": "^0.4.0",

@@ -3,6 +3,7 @@ import { Link } from 'react-router';
 import MapContainer from '../map/map_container';
 import {getArticle} from './../../util/article_api_util';
 import RawHtml from "react-raw-html";
+var ReactDisqusThread = require('react-disqus-thread');
 
 class Restaurant extends React.Component{
   constructor(props){
@@ -46,19 +47,21 @@ class Restaurant extends React.Component{
     /**
     *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
     *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
-    // /*
+    /*
+    */
+    let PAGE_URL = "test";
+    let PAGE_IDENTIFIER = "test"
+
     var disqus_config = function () {
-    this.page.url = "http://sandwich1.herokuapp.com/";  // Replace PAGE_URL with your page's canonical URL variable
-    this.page.identifier = `restaurant/${this.state.article.id}`; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+      this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+      this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
     };
-    // */
     (function() { // DON'T EDIT BELOW THIS LINE
       var d = document, s = d.createElement('script');
       s.src = 'https://http-sandwich1-herokuapp-com.disqus.com/embed.js';
       s.setAttribute('data-timestamp', +new Date());
       (d.head || d.body).appendChild(s);
     })();
-    console.log(this.state.article);
   }
 
   componentWillReceiveProps(){

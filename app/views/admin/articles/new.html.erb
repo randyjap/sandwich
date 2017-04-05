@@ -1,24 +1,43 @@
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<style>
+  form {
+    padding: 20px;
+  }
+</style>
 <form class="" action="<%= admin_articles_url %>" method="post">
   <input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>">
-  <table>
-    <tr>
-      <td>Title</td>
-      <td><input type="text" name="article[title]" value=""></td>
-    </tr>
-    <tr>
-      <td>Image_url:</td>
-      <td><input type="text" name="article[image_url]" value=""></td>
-    </tr>
-    <tr>
-      <td>Thumbnail_url:</td>
-      <td><input type="text" name="article[thumbnail_url]" value=""></td>
-    </tr>
-    <tr>
-      <td>Article:</td>
-      <td><textarea name="article[article]" value="" rows="20" cols="200"></textarea></td>
-    </tr>
-    <tr>
-      <td><input type="submit" name="" value="Submit"></td>
-    </tr>
-  </table>
+
+  <div class="form-group">
+    <label for="article-title">Select City</label>
+    </br>
+    <select class="custom-select">
+      <option value="San Francisco">San Francisco</option>
+      <option value="Taipei">Taipei</option>
+      <option value="Los Angeles">Los Angeles</option>
+    </select>
+    </br>
+    <small>Select here to indicate which city this article belongs to.</small>
+  </div>
+
+  <div class="form-group">
+    <label class="custom-control custom-checkbox">
+      <input type="checkbox" class="custom-control-input" value="Featured">
+      <span class="custom-control-indicator"></span>
+      <span class="custom-control-description">Click here to Feature this article</span>
+    </label>
+  </div>
+
+  <div class="form-group">
+    <label for="article-title">Article Title</label>
+    <input type="text" name="article[title]" class="form-control" id="article-title" placeholder="Article Title">
+    <small>This is the title the article and what shows up on the main page</small>
+  </div>
+
+  <div class="form-group">
+    <label for="article-article">Article Body in raw HTML</label>
+    <textarea class="form-control" id="article-article" rows="20"></textarea>
+    <small>Type in raw HTML</small>
+  </div>
+
+  <button type="submit" class="btn btn-primary">Submit</button>
 </form>
