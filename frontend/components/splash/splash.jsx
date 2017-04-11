@@ -443,12 +443,12 @@ class Splash extends React.Component{
 
       					<aside>
                   Advertisement
-      						<div className="block_banner_1"><a href="#"><img src="http://www.randyjap.com/sandwich_assets/images/banner_1.jpg" alt=""/></a></div>
+      						<div className="block_banner_1"><a href="#"><img src="https://node-sandwich.herokuapp.com/images/banner_1.jpg" alt=""/></a></div>
       					</aside>
 
       					<aside>
                   Advertisement
-      						<div className="block_banner_1"><a href="#"><img src="http://www.randyjap.com/sandwich_assets/images/banner_1.jpg" alt=""/></a></div>
+      						<div className="block_banner_1"><a href="#"><img src="https://node-sandwich.herokuapp.com/images/banner_1.jpg" alt=""/></a></div>
       					</aside>
 
       					<aside>
