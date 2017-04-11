@@ -33,7 +33,7 @@ export default class MarkerManager {
       position: pos,
       map: this.map,
       restaurantId: restaurant.id,
-      icon: 'http://res.cloudinary.com/dkympkwdz/image/upload/v1488570961/restaurant_marker_mrnomi.png'
+      icon: 'https://res.cloudinary.com/dkympkwdz/image/upload/v1488570961/restaurant_marker_mrnomi.png'
     });
     this._addWindow(restaurant, marker);
     marker.addListener('click', () => this.handleClick(restaurant));

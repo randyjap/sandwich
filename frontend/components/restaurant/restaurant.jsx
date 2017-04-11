@@ -105,7 +105,7 @@ class Restaurant extends React.Component{
       					<div className="inner">
 
       						<h1 className="logo">
-                    <img src="http://res.cloudinary.com/dkympkwdz/image/upload/v1490186761/ad_banner_hhhwse.png"/>
+                    <img src="https://res.cloudinary.com/dkympkwdz/image/upload/v1490186761/ad_banner_hhhwse.png"/>
                     Taste Terminal
                   </h1>
       					</div>
@@ -125,7 +125,7 @@ class Restaurant extends React.Component{
       							<div className="dropdown" data-menu="los-angeles">
       								<div className="image_type_1">
       									<div className="image">
-      										<a href="#"><img src="http://res.cloudinary.com/dkympkwdz/image/upload/c_scale,h_496,w_671/v1489010716/example_pqoqsl.jpg" alt=""/><span className="hover"></span></a>
+      										<a href="#"><img src="https://res.cloudinary.com/dkympkwdz/image/upload/c_scale,h_496,w_671/v1489010716/example_pqoqsl.jpg" alt=""/><span className="hover"></span></a>
       									</div>
 
       									<div className="title"><a href="#">Sed ut perspiciatis unde omnis iste.</a></div>
@@ -133,7 +133,7 @@ class Restaurant extends React.Component{
 
       								<div className="image_type_1">
       									<div className="image">
-      										<a href="#"><img src="http://res.cloudinary.com/dkympkwdz/image/upload/c_scale,h_496,w_671/v1489010716/example_pqoqsl.jpg" alt=""/><span className="hover"></span></a>
+      										<a href="#"><img src="https://res.cloudinary.com/dkympkwdz/image/upload/c_scale,h_496,w_671/v1489010716/example_pqoqsl.jpg" alt=""/><span className="hover"></span></a>
       									</div>
 
       									<div className="title"><a href="#">Unde omnis iste natus sit volup.</a></div>
@@ -156,7 +156,7 @@ class Restaurant extends React.Component{
       							<div className="dropdown" data-menu="taipei">
       								<div className="image_type_1">
       									<div className="image">
-      										<a href="#"><img src="http://res.cloudinary.com/dkympkwdz/image/upload/c_scale,h_496,w_671/v1489010716/example_pqoqsl.jpg" alt=""/><span className="hover"></span></a>
+      										<a href="#"><img src="https://res.cloudinary.com/dkympkwdz/image/upload/c_scale,h_496,w_671/v1489010716/example_pqoqsl.jpg" alt=""/><span className="hover"></span></a>
       									</div>
 
       									<div className="title"><a href="#">Sed ut perspiciatis unde omnis iste.</a></div>
@@ -164,7 +164,7 @@ class Restaurant extends React.Component{
 
       								<div className="image_type_1">
       									<div className="image">
-      										<a href="#"><img src="http://res.cloudinary.com/dkympkwdz/image/upload/c_scale,h_496,w_671/v1489010716/example_pqoqsl.jpg" alt=""/><span className="hover"></span></a>
+      										<a href="#"><img src="https://res.cloudinary.com/dkympkwdz/image/upload/c_scale,h_496,w_671/v1489010716/example_pqoqsl.jpg" alt=""/><span className="hover"></span></a>
       									</div>
 
       									<div className="title"><a href="#">Unde omnis iste natus sit volup.</a></div>
@@ -186,7 +186,7 @@ class Restaurant extends React.Component{
       							<div className="dropdown" data-menu="sf">
       								<div className="image_type_1">
       									<div className="image">
-      										<a href="#"><img src="http://res.cloudinary.com/dkympkwdz/image/upload/c_scale,h_496,w_671/v1489010716/example_pqoqsl.jpg" alt=""/><span className="hover"></span></a>
+      										<a href="#"><img src="https://res.cloudinary.com/dkympkwdz/image/upload/c_scale,h_496,w_671/v1489010716/example_pqoqsl.jpg" alt=""/><span className="hover"></span></a>
       									</div>
 
       									<div className="title"><a href="#">Sed ut perspiciatis unde omnis iste.</a></div>
@@ -194,7 +194,7 @@ class Restaurant extends React.Component{
 
       								<div className="image_type_1">
       									<div className="image">
-      										<a href="#"><img src="http://res.cloudinary.com/dkympkwdz/image/upload/c_scale,h_496,w_671/v1489010716/example_pqoqsl.jpg" alt=""/><span className="hover"></span></a>
+      										<a href="#"><img src="https://res.cloudinary.com/dkympkwdz/image/upload/c_scale,h_496,w_671/v1489010716/example_pqoqsl.jpg" alt=""/><span className="hover"></span></a>
       									</div>
 
       									<div className="title"><a href="#">Unde omnis iste natus sit volup.</a></div>

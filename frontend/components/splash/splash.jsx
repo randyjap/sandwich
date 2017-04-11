@@ -86,7 +86,7 @@ class Splash extends React.Component{
         <article key={key} className="post_type_4">
           <div className="feature">
             <div className="image">
-              <Link to={`restaurants/${key}`}><img src={`http://res.cloudinary.com/dkympkwdz/image/upload/c_scale,h_384,w_601/${article.media[0].url}`} alt=""/><span className="hover"></span></Link>
+              <Link to={`restaurants/${key}`}><img src={`https://res.cloudinary.com/dkympkwdz/image/upload/c_scale,h_384,w_601/${article.media[0].url}`} alt=""/><span className="hover"></span></Link>
             </div>
           </div>
 
@@ -127,7 +127,7 @@ class Splash extends React.Component{
           <article key={key} className="post_type_4">
             <div className="feature">
               <div className="image">
-                <Link to={`restaurants/${key}`}><img src={`http://res.cloudinary.com/dkympkwdz/image/upload/c_scale,h_384,w_601/${article.media[0].url}`} alt=""/><span className="hover"></span></Link>
+                <Link to={`restaurants/${key}`}><img src={`https://res.cloudinary.com/dkympkwdz/image/upload/c_scale,h_384,w_601/${article.media[0].url}`} alt=""/><span className="hover"></span></Link>
               </div>
             </div>
 
@@ -200,7 +200,7 @@ class Splash extends React.Component{
       let article = articles[key];
       return (
         <article key={key}>
-          <div className="image"><Link to={`restaurants/${key}`}><img src={`http://res.cloudinary.com/dkympkwdz/image/upload/c_scale,h_66,w_86/${article.media[0].url}`} alt=""/></Link></div>
+          <div className="image"><Link to={`restaurants/${key}`}><img src={`https://res.cloudinary.com/dkympkwdz/image/upload/c_scale,h_66,w_86/${article.media[0].url}`} alt=""/></Link></div>
 
           <div className="content">
             <div className="title">
@@ -256,7 +256,7 @@ class Splash extends React.Component{
       					<div className="inner">
 
       						<h1 className="logo">
-                    <img src="http://res.cloudinary.com/dkympkwdz/image/upload/v1490186761/ad_banner_hhhwse.png"/>
+                    <img src="https://res.cloudinary.com/dkympkwdz/image/upload/v1490186761/ad_banner_hhhwse.png"/>
                     Taste Terminal
                   </h1>
       					</div>
@@ -276,7 +276,7 @@ class Splash extends React.Component{
       							<div className="dropdown" data-menu="los-angeles">
       								<div className="image_type_1">
       									<div className="image">
-      										<a href="#"><img src="http://res.cloudinary.com/dkympkwdz/image/upload/c_scale,h_496,w_671/v1489010716/example_pqoqsl.jpg" alt=""/><span className="hover"></span></a>
+      										<a href="#"><img src="https://res.cloudinary.com/dkympkwdz/image/upload/c_scale,h_496,w_671/v1489010716/example_pqoqsl.jpg" alt=""/><span className="hover"></span></a>
       									</div>
 
       									<div className="title"><a href="#">Sed ut perspiciatis unde omnis iste.</a></div>
@@ -284,7 +284,7 @@ class Splash extends React.Component{
 
       								<div className="image_type_1">
       									<div className="image">
-      										<a href="#"><img src="http://res.cloudinary.com/dkympkwdz/image/upload/c_scale,h_496,w_671/v1489010716/example_pqoqsl.jpg" alt=""/><span className="hover"></span></a>
+      										<a href="#"><img src="https://res.cloudinary.com/dkympkwdz/image/upload/c_scale,h_496,w_671/v1489010716/example_pqoqsl.jpg" alt=""/><span className="hover"></span></a>
       									</div>
 
       									<div className="title"><a href="#">Unde omnis iste natus sit volup.</a></div>
@@ -307,7 +307,7 @@ class Splash extends React.Component{
       							<div className="dropdown" data-menu="taipei">
       								<div className="image_type_1">
       									<div className="image">
-      										<a href="#"><img src="http://res.cloudinary.com/dkympkwdz/image/upload/c_scale,h_496,w_671/v1489010716/example_pqoqsl.jpg" alt=""/><span className="hover"></span></a>
+      										<a href="#"><img src="https://res.cloudinary.com/dkympkwdz/image/upload/c_scale,h_496,w_671/v1489010716/example_pqoqsl.jpg" alt=""/><span className="hover"></span></a>
       									</div>
 
       									<div className="title"><a href="#">Sed ut perspiciatis unde omnis iste.</a></div>
@@ -315,7 +315,7 @@ class Splash extends React.Component{
 
       								<div className="image_type_1">
       									<div className="image">
-      										<a href="#"><img src="http://res.cloudinary.com/dkympkwdz/image/upload/c_scale,h_496,w_671/v1489010716/example_pqoqsl.jpg" alt=""/><span className="hover"></span></a>
+      										<a href="#"><img src="https://res.cloudinary.com/dkympkwdz/image/upload/c_scale,h_496,w_671/v1489010716/example_pqoqsl.jpg" alt=""/><span className="hover"></span></a>
       									</div>
 
       									<div className="title"><a href="#">Unde omnis iste natus sit volup.</a></div>
@@ -337,7 +337,7 @@ class Splash extends React.Component{
       							<div className="dropdown" data-menu="sf">
       								<div className="image_type_1">
       									<div className="image">
-      										<a href="#"><img src="http://res.cloudinary.com/dkympkwdz/image/upload/c_scale,h_496,w_671/v1489010716/example_pqoqsl.jpg" alt=""/><span className="hover"></span></a>
+      										<a href="#"><img src="https://res.cloudinary.com/dkympkwdz/image/upload/c_scale,h_496,w_671/v1489010716/example_pqoqsl.jpg" alt=""/><span className="hover"></span></a>
       									</div>
 
       									<div className="title"><a href="#">Sed ut perspiciatis unde omnis iste.</a></div>
@@ -345,7 +345,7 @@ class Splash extends React.Component{
 
       								<div className="image_type_1">
       									<div className="image">
-      										<a href="#"><img src="http://res.cloudinary.com/dkympkwdz/image/upload/c_scale,h_496,w_671/v1489010716/example_pqoqsl.jpg" alt=""/><span className="hover"></span></a>
+      										<a href="#"><img src="https://res.cloudinary.com/dkympkwdz/image/upload/c_scale,h_496,w_671/v1489010716/example_pqoqsl.jpg" alt=""/><span className="hover"></span></a>
       									</div>
 
       									<div className="title"><a href="#">Unde omnis iste natus sit volup.</a></div>
@@ -376,7 +376,7 @@ class Splash extends React.Component{
       						<ul className="slides">
       							<li>
       								<div className="caption type_1">
-      									<img src="http://res.cloudinary.com/dkympkwdz/image/upload/c_scale,h_381,w_635/v1489010716/example_pqoqsl.jpg" alt=""/>
+      									<img src="https://res.cloudinary.com/dkympkwdz/image/upload/c_scale,h_381,w_635/v1489010716/example_pqoqsl.jpg" alt=""/>
       									<div className="text_1_1">Travel, PHOTOGRAPHY</div>
       									<div className="text_1_2">Mountains in Switzerland</div>
       									<div className="text_1_3"><a href="#" className="general_button_type_1">Read More</a></div>
@@ -385,7 +385,7 @@ class Splash extends React.Component{
 
       							<li>
       								<div className="caption type_1">
-      									<img src="http://res.cloudinary.com/dkympkwdz/image/upload/c_scale,h_381,w_635/v1489010716/example_pqoqsl.jpg" alt=""/>
+      									<img src="https://res.cloudinary.com/dkympkwdz/image/upload/c_scale,h_381,w_635/v1489010716/example_pqoqsl.jpg" alt=""/>
       									<div className="text_1_1">Life, PHOTOGRAPHY</div>
       									<div className="text_1_2">Flying over the mountains</div>
       									<div className="text_1_3"><a href="#" className="general_button_type_1">Read More</a></div>
